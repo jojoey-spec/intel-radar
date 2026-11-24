@@ -467,8 +467,8 @@
 
   async function publishToGithubNow() {
     const payload = collectSettingsPayload();
-    if (!payload.github_repo || !payload.github_token) {
-      showToast('⚠️ 請先填寫 GitHub 倉庫名稱與 Token');
+    if (!payload.github_token) {
+      showToast('⚠️ 請先點右上「取得授權碼」並貼上 ghp_... 授權碼');
       return;
     }
     const btn = $('btnPublishGh');

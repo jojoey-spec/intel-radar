@@ -112,10 +112,19 @@ def publish_to_github_pages(repo: str, token: str, node_name: str = "", model_id
     """
     repo = repo.strip().strip("/")
     token = token.strip()
-    if "/" not in repo or not token:
-        return {"ok": False, "error": "請填寫正確的 GitHub Repo（格式：帳號/倉庫名）與 Token"}
+    if not token:
+        return {"ok": False, "error": "請先貼上 GitHub 授權碼 (Token)"}
 
-    owner, repo_name = repo.split("/", 1)
+    # Auto-detect GitHub username via GET /user if repo is omitted or has no owner prefix!
+    if "/" not in repo:
+        st_user, user_info = _gh_request("GET", "/user", token)
+        if st_user != 200 or not isinstance(user_info, dict) or not user_info.get("login"):
+            return {"ok": False, "error": f"授權碼驗證失敗 ({st_user})，請確認貼上的 ghp_... 是否完整"}
+        owner = user_info["login"]
+        repo_name = repo if repo else "intel-radar"
+        repo = f"{owner}/{repo_name}"
+    else:
+        owner, repo_name = repo.split("/", 1)
 
     # Verify repo exists (or auto-create public repo if 404 and token has permission)
     st_repo, repo_info = _gh_request("GET", f"/repos/{repo}", token)
@@ -234,6 +243,7 @@ def publish_to_github_pages(repo: str, token: str, node_name: str = "", model_id
     pages_url = f"https://{owner}.github.io/{repo_name}/"
     return {
         "ok": True,
+        "repo": repo,
         "pages_url": pages_url,
         "updated_at": state_payload["heartbeat"]["updated_at"],
         "node_name": state_payload["heartbeat"]["node_name"],

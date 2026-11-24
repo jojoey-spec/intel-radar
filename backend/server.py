@@ -304,6 +304,8 @@ class IntelRadarHandler(SimpleHTTPRequestHandler):
                 node_name=settings.get("node_name", "Mac-Primary"),
                 model_id=settings.get("mlx_model", ""),
             )
+            if res.get("ok") and res.get("repo"):
+                update_settings({"github_repo": res["repo"]})
             self._send_json(res, status=200 if res.get("ok") else 400)
             return
 
