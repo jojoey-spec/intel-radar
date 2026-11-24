@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="情報雷達" />
+  <title>Intel Radar — 個人情報雷達與傳言判讀系統</title>
+  <meta name="description" content="基於 Apple Silicon 本地 MLX 模型驅動的低雜訊全球重大新聞警報與小道消息可信度分級系統。" />
+  <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+  <!-- Top Editorial Masthead -->
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand-group">
+        <h1 class="brand-title">INTEL RADAR</h1>
+        <span class="brand-subtitle">個人情報雷達 // LOCAL MLX FILTER</span>
+      </div>
+
+      <div class="telemetry-strip" id="telemetryStrip">
+        <span class="telemetry-item" title="本地 MLX 守門員狀態">
+          <span class="status-dot" id="modelStatusDot"></span>
+          <span id="modelStatusText">MLX 待命</span>
+        </span>
+        <span class="telemetry-item" id="noiseStatsText" title="低於門檻自動攔截的日常新聞比例">
+          雜訊攔截 --%
+        </span>
+        <span class="telemetry-item" id="lastScanText">
+          尚未掃描
+        </span>
+      </div>
+
+      <div class="masthead-actions">
+        <button class="btn btn-primary" id="btnScanNow" type="button">
+          立即掃描全球信源
+        </button>
+        <button class="btn" id="btnRefreshStatic" type="button" style="display:none;">
+          🔄 重新整理
+        </button>
+        <button class="btn" id="btnOpenSandbox" type="button">
+          🧪 模擬情報測試
+        </button>
+        <button class="btn" id="btnOpenSettings" type="button">
+          ⚙️ 雲端同步與通知
+        </button>
+        <button class="btn btn-ghost" id="btnToggleTheme" type="button" aria-label="切換深淺主題">
+          ◐
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Live Scan Progress -->
+  <div class="scan-banner" id="scanBanner" role="status" aria-live="polite">
+    <div class="scan-banner-box">
+      <div class="scan-banner-text" id="scanBannerText">
+        正在準備掃描...
+      </div>
+      <div class="scan-progress-track">
+        <div class="scan-progress-fill" id="scanProgressFill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mode Switcher & Domain Chips -->
+  <nav class="subbar" aria-label="情報視角與領域篩選">
+    <div class="mode-tabs" role="tablist">
+      <button class="mode-tab active" id="tabMajorBtn" role="tab" aria-selected="true" data-target="majorPanel" type="button">
+        🚨 世界重大情報
+        <span class="tab-count" id="majorTabBadge">0</span>
+      </button>
+      <button class="mode-tab" id="tabRumorBtn" role="tab" aria-selected="false" data-target="rumorPanel" type="button">
+        🕵️ 小道消息傳言版
+        <span class="tab-count" id="rumorTabBadge">0</span>
+      </button>
+    </div>
+
+    <div class="domain-filters" id="domainFilters">
+      <button class="filter-chip active" data-domain="ALL" type="button">全部領域</button>
+      <button class="filter-chip" data-domain="AI・科技巨頭" type="button">AI・科技巨頭</button>
+      <button class="filter-chip" data-domain="半導體・晶片" type="button">半導體・晶片</button>
+      <button class="filter-chip" data-domain="Apple・供應鏈" type="button">Apple・供應鏈</button>
+      <button class="filter-chip" data-domain="國際政經" type="button">國際政經</button>
+      <button class="filter-chip" data-domain="金融市場" type="button">金融市場</button>
+      <button class="filter-chip" data-domain="遊戲・娛樂爆料" type="button">遊戲・娛樂爆料</button>
+    </div>
+  </nav>
+
+  <!-- Main Workspace -->
+  <main class="workspace">
+    <!-- Panel 1: Major World & Tech Dispatches -->
+    <section class="view-panel active" id="majorPanel" aria-labelledby="tabMajorBtn">
+      <div class="major-grid">
+        <!-- Left: Lv.9-10 Nuclear Alerts (Push-worthy) -->
+        <div>
+          <div class="zone-header">
+            <h2 class="zone-title">核彈級警報（Lv.9–10｜主動推播）</h2>
+            <span class="zone-caption">不夠大條絕不響鈴</span>
+          </div>
+          <div id="nuclearList" class="card-stack"></div>
+        </div>
+
+        <!-- Right: Lv.7-8 Notable Briefs (Silent Archive) -->
+        <div>
+          <div class="zone-header">
+            <h2 class="zone-title">重要動態收錄（Lv.7–8｜靜音存檔）</h2>
+            <span class="zone-caption">打開看板才顯示・不打擾</span>
+          </div>
+          <div id="archivedMajorList" class="card-stack"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel 2: Rumor Mill 3-Column Kanban -->
+    <section class="view-panel" id="rumorPanel" aria-labelledby="tabRumorBtn">
+      <div class="rumor-legend-bar">
+        <span>
+          <strong>證據計分制（防模型亂猜機率）：</strong>
+          依「硬證據流出 / 爆料者紀錄 / 多方交叉印證 / 細節具體度」自動換算可信度，以 <strong>33% / 67%</strong> 為三欄分界。
+        </span>
+        <button class="btn btn-ghost" id="btnClearSandbox" type="button" style="display:none;">
+          🧹 清除模擬測試項目
+        </button>
+      </div>
+
+      <div class="rumor-columns">
+        <!-- Column 1: High Likelihood (68% - 100%) -->
+        <div class="rumor-col">
+          <div class="rumor-col-header">
+            <h2 class="rumor-col-title">
+              <span class="tier-dot likely"></span>
+              可能性極高
+            </h2>
+            <span class="tier-range" id="rangeLikelyLabel">68% – 100%</span>
+          </div>
+          <div class="card-stack" id="rumorLikelyList"></div>
+        </div>
+
+        <!-- Column 2: Watch List (34% - 67%) -->
+        <div class="rumor-col">
+          <div class="rumor-col-header">
+            <h2 class="rumor-col-title">
+              <span class="tier-dot watch"></span>
+              待觀察風聲
+            </h2>
+            <span class="tier-range" id="rangeWatchLabel">34% – 67%</span>
+          </div>
+          <div class="card-stack" id="rumorWatchList"></div>
+        </div>
+
+        <!-- Column 3: Unlikely / Low Credibility (0% - 33%) -->
+        <div class="rumor-col">
+          <div class="rumor-col-header">
+            <h2 class="rumor-col-title">
+              <span class="tier-dot unlikely"></span>
+              不太可信
+            </h2>
+            <span class="tier-range" id="rangeUnlikelyLabel">0% – 33%</span>
+          </div>
+          <div class="card-stack" id="rumorUnlikelyList"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal 1: Live Filter Sandbox -->
+  <div class="modal-backdrop" id="sandboxModal" role="dialog" aria-modal="true" aria-labelledby="sandboxModalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2 class="modal-title" id="sandboxModalTitle">🧪 情報判讀實驗室（測試本地 MLX 守門員）</h2>
+        <button class="btn btn-ghost" id="btnCloseSandbox" type="button">✕</button>
+      </div>
+
+      <p class="form-hint" style="margin-bottom: 10px;">
+        點選下方預設情境或自行輸入任意新聞／爆料，直接觀察本地模型如何區分「核彈新聞」、「三級傳言」與「日常雜訊」：
+      </p>
+
+      <div class="preset-row">
+        <button class="preset-btn" type="button" data-preset="jensen">⚡ 範例1：黃仁勳重大人事震撼彈</button>
+        <button class="preset-btn" type="button" data-preset="rumor_high">🟢 範例2：FCC認證+外媒雙重實錘爆料</button>
+        <button class="preset-btn" type="button" data-preset="rumor_watch">🟡 範例3：單一供應鏈傳聞次世代晶片</button>
+        <button class="preset-btn" type="button" data-preset="rumor_low">🔴 範例4：匿名網友離譜假爆料</button>
+        <button class="preset-btn" type="button" data-preset="noise">🗑️ 範例5：無聊日常促銷雜訊</button>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="sandboxTitleInput">測試標題（中英文皆可）</label>
+        <input class="form-input" id="sandboxTitleInput" type="text" placeholder="例如：Breaking: Jensen Huang announces sudden return to lead new NVIDIA AI division..." />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="sandboxSummaryInput">補充內文摘要（選填）</label>
+        <textarea class="form-textarea" id="sandboxSummaryInput" placeholder="輸入幾句背景描述，讓模型檢查細節與證據..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="sandboxSourceSelect">模擬信源背景與共振程度</label>
+        <select class="form-select" id="sandboxSourceSelect">
+          <option value="tier1_multi">🏛️ 多家一線外媒同時報導 (Reuters + Bloomberg + CNBC 共振)</option>
+          <option value="hard_leak">📄 監管認證/跑分庫流出 + 科技媒體轉載 (雙信源印證)</option>
+          <option value="known_leaker">👤 知名科技爆料頻道 / 單一供應鏈消息</option>
+          <option value="anon_blog">❓ 匿名論壇單一貼文 (無佐證)</option>
+        </select>
+      </div>
+
+      <div class="sandbox-result-box" id="sandboxResultBox"></div>
+
+      <div class="modal-actions">
+        <button class="btn" id="btnClearSandboxModal" type="button">清除看板上的測試項目</button>
+        <button class="btn btn-primary" id="btnRunSandbox" type="button">送交本地模型判讀</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Settings & Mobile Notification Channels -->
+  <div class="modal-backdrop" id="settingsModal" role="dialog" aria-modal="true" aria-labelledby="settingsModalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2 class="modal-title" id="settingsModalTitle">⚙️ GitHub Pages 雲端看板、主副手與手機推播</h2>
+        <button class="btn btn-ghost" id="btnCloseSettings" type="button">✕</button>
+      </div>
+
+      <div class="form-group" style="padding: 12px 14px; background: var(--bg-sunken); border-radius: var(--radius-md); border: 1px solid var(--line-subtle); margin-bottom: 16px;">
+        <div style="font-weight: 700; font-size: 0.88rem; margin-bottom: 8px;">☁️ GitHub Pages 雲端看板同步（手機隨時點網址看）</div>
+        <div class="form-row-2">
+          <div class="form-group" style="margin-bottom: 10px;">
+            <label class="form-label" for="setGhRepo">GitHub 倉庫 (帳號/Repo名)</label>
+            <input class="form-input" id="setGhRepo" type="text" placeholder="例如：joeychen/intel-radar" />
+          </div>
+          <div class="form-group" style="margin-bottom: 10px;">
+            <label class="form-label" for="setGhToken">GitHub Personal Access Token</label>
+            <input class="form-input" id="setGhToken" type="password" placeholder="ghp_... 或 github_pat_..." />
+          </div>
+        </div>
+        <div class="form-row-2">
+          <div class="form-group" style="margin-bottom: 6px;">
+            <label class="form-label" for="setNodeRole">本機主副手角色</label>
+            <select class="form-select" id="setNodeRole">
+              <option value="primary">🥇 Primary 主手（定時主動更新）</option>
+              <option value="secondary">🥈 Secondary 副手（主手逾 25 分鐘未動才接手）</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin-bottom: 6px;">
+            <label class="form-label" for="setNodeName">本機節點代號</label>
+            <input class="form-input" id="setNodeName" type="text" placeholder="Mac-Primary" />
+          </div>
+        </div>
+        <div class="form-hint">Token 僅保存在你這台電腦本地 SQLite，匯出至 GitHub 的 <code>state.json</code> 會自動剝除所有金鑰。</div>
+        <div style="margin-top: 10px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+          <button class="btn btn-primary" id="btnPublishGh" type="button">🚀 立即發佈 / 更新至 GitHub Pages</button>
+          <span id="ghPublishStatus" style="font-size: 0.8rem; color: var(--ink-secondary);"></span>
+        </div>
+      </div>
+
+      <div class="form-row-2">
+        <div class="form-group">
+          <label class="form-label" for="setMajorMin">重大新聞響鈴門檻 (Lv.8–10)</label>
+          <input class="form-input" id="setMajorMin" type="number" min="8" max="10" value="9" />
+          <div class="form-hint">預設 Lv.9：只有世界級/巨頭震撼彈才主動推播</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="setScanMin">背景自動巡檢間隔 (分鐘)</label>
+          <input class="form-input" id="setScanMin" type="number" min="5" max="180" value="15" />
+          <div class="form-hint">預設每 15 分鐘抓一輪新情報</div>
+        </div>
+      </div>
+
+      <div class="form-row-2">
+        <div class="form-group">
+          <label class="form-label" for="setRumorLow">傳言「不太可信」上限 (%)</label>
+          <input class="form-input" id="setRumorLow" type="number" min="15" max="49" value="33" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="setRumorWatch">傳言「待觀察」上限 (%)</label>
+          <input class="form-input" id="setRumorWatch" type="number" min="50" max="85" value="67" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="setNotifyMacos">macOS 桌面原生通知</label>
+        <select class="form-select" id="setNotifyMacos">
+          <option value="true">開啟（觸發 Lv.9+ 或傳言升檔時彈出系統通知）</option>
+          <option value="false">關閉</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="setNtfyTopic">📱 手機推播方案 A：ntfy.sh 主題名稱（iOS / Android 免註冊最快）</label>
+        <input class="form-input" id="setNtfyTopic" type="text" placeholder="例如：joey-intel-radar-9921（手機裝 ntfy App 訂閱同名主題即可）" />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="setBarkUrl">📱 手機推播方案 B：iOS Bark 伺服器網址</label>
+        <input class="form-input" id="setBarkUrl" type="text" placeholder="例如：https://api.day.app/你的BarkKey" />
+      </div>
+
+      <div class="form-row-2">
+        <div class="form-group">
+          <label class="form-label" for="setTgToken">📱 方案 C：Telegram Bot Token</label>
+          <input class="form-input" id="setTgToken" type="password" placeholder="123456:ABC-DEF..." />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="setTgChat">Telegram Chat ID</label>
+          <input class="form-input" id="setTgChat" type="text" placeholder="例如：-100123456789" />
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn" id="btnTestPush" type="button">🔔 發送測試推播</button>
+        <button class="btn btn-primary" id="btnSaveSettings" type="button">儲存設定</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toastBox" role="status" aria-live="polite"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Python & Virtual Environment
+venv/
+__pycache__/
+*.py[cod]
+*.so
+
+# Local SQLite DB & Runtime State (contains private tokens/webhooks — NEVER commit!)
+data/
+*.db
+*.sqlite*
+.env
+
+# Generated local preview state
+web/state.json
+
+# macOS
+.DS_Store
