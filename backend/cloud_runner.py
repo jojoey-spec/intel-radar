@@ -23,9 +23,9 @@ from .config import DEFAULT_FEEDS, MAJOR_ARCHIVE_MIN_LEVEL, MAJOR_NOTIFY_MIN_LEV
 from .fetcher import cluster_items, fetch_all_feeds
 from .notifier import dispatch_alert
 
-GITHUB_MODELS_URL = "https://models.github.ai/inference/chat/completions"
-DEFAULT_CLOUD_MODEL = "openai/gpt-4o-mini"
-MAX_CLUSTERS_PER_BATCH = 14
+DEFAULT_LLM_URL = "http://127.0.0.1:11434/v1/chat/completions"
+DEFAULT_CLOUD_MODEL = "qwen3:4b-instruct"
+MAX_CLUSTERS_PER_BATCH = 8
 MAX_SEEN_HASHES = 3500
 
 BATCH_SYSTEM_PROMPT = """你是一個極度嚴謹、零幻覺的「全球情報與傳言批次判讀守門員」。
@@ -103,19 +103,23 @@ def call_github_models_batch(clusters: List[Dict[str, Any]], token: str, model: 
         "response_format": {"type": "json_object"},
     }
 
+    llm_url = (os.environ.get("LLM_BASE_URL") or DEFAULT_LLM_URL).strip()
+    headers = {
+        "Content-Type": "application/json; charset=utf-8",
+        "Accept": "application/json",
+        "User-Agent": "IntelRadar-CloudRunner/0.2",
+    }
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+
     req = urllib.request.Request(
-        GITHUB_MODELS_URL,
+        llm_url,
         data=json.dumps(body).encode("utf-8"),
-        headers={
-            "Content-Type": "application/json; charset=utf-8",
-            "Authorization": f"Bearer {token}",
-            "Accept": "application/vnd.github+json",
-            "User-Agent": "IntelRadar-CloudRunner/0.2",
-        },
+        headers=headers,
         method="POST",
     )
 
-    with urllib.request.urlopen(req, timeout=45) as resp:
+    with urllib.request.urlopen(req, timeout=240) as resp:
         raw_resp = json.loads(resp.read().decode("utf-8", errors="ignore"))
 
     content = (
@@ -205,8 +209,8 @@ def run_cloud_update(prev_state_path: Path, prev_meta_path: Path, out_state_path
 
     batch_stats = {"major_alerts": 0, "archived_major": 0, "rumors_added": 0, "noise_filtered": deal_noise_count}
 
-    if eval_slice and token:
-        print(f"[CloudRunner] Calling GitHub Models ({model}) for {len(eval_slice)} new clusters in 1 batch request...")
+    if eval_slice:
+        print(f"[CloudRunner] Calling LLM ({model}) for {len(eval_slice)} new clusters in 1 batch request...")
         ai_map = call_github_models_batch(eval_slice, token=token, model=model)
 
         for idx, cl in enumerate(eval_slice):

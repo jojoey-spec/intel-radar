@@ -10,7 +10,6 @@ permissions:
   contents: write
   pages: write
   id-token: write
-  models: read
 
 concurrency:
   group: "intel-radar-pages"
@@ -19,7 +18,7 @@ concurrency:
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - name: Checkout main source
         uses: actions/checkout@v4
@@ -38,9 +37,32 @@ jobs:
             echo "{}" > _prev/state_meta.json
           fi
 
-      - name: Run Batch Intelligence Scan (GitHub Models Free Tier)
+      - name: Cache Ollama binary & Qwen3-4B-Instruct weights
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.ollama/models
+            ~/ollama-bin
+          key: ollama-qwen3-4b-instruct-v1
+
+      - name: Start Ollama on GitHub Runner CPU
+        run: |
+          mkdir -p ~/ollama-bin
+          if [ ! -x ~/ollama-bin/bin/ollama ] && [ ! -x ~/ollama-bin/ollama ]; then
+            curl -fsSL https://ollama.com/download/ollama-linux-amd64.tgz | tar -xz -C ~/ollama-bin
+          fi
+          export PATH="$HOME/ollama-bin/bin:$HOME/ollama-bin:$PATH"
+          nohup ollama serve > /tmp/ollama.log 2>&1 &
+          for i in $(seq 1 20); do
+            if curl -sf http://127.0.0.1:11434/api/tags >/dev/null; then break; fi
+            sleep 1
+          done
+          ollama pull qwen3:4b-instruct
+
+      - name: Run Batch Intelligence Scan
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CLOUD_MODEL: "qwen3:4b-instruct"
+          LLM_BASE_URL: "http://127.0.0.1:11434/v1/chat/completions"
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           BARK_URL: ${{ secrets.BARK_URL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -66,7 +88,7 @@ jobs:
           git checkout --orphan gh-pages
           git add .
           git commit -m "chore: cloud radar snapshot $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages:gh-pages
+          git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" gh-pages:gh-pages
 
       - name: Prepare public artifact (without internal meta)
         run: |
