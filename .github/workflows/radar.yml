@@ -1,0 +1,82 @@
+name: Intel Radar Cloud Updater
+
+on:
+  schedule:
+    # Runs every 20 minutes purely on free GitHub Actions compute
+    - cron: '*/20 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  models: read
+
+concurrency:
+  group: "intel-radar-pages"
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout main source
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Restore previous state from gh-pages branch
+        run: |
+          mkdir -p _prev
+          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+            git fetch origin gh-pages --depth=1
+            git show origin/gh-pages:state.json > _prev/state.json 2>/dev/null || echo "{}" > _prev/state.json
+            git show origin/gh-pages:state_meta.json > _prev/state_meta.json 2>/dev/null || echo "{}" > _prev/state_meta.json
+          else
+            echo "{}" > _prev/state.json
+            echo "{}" > _prev/state_meta.json
+          fi
+
+      - name: Run Batch Intelligence Scan (GitHub Models Free Tier)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          BARK_URL: ${{ secrets.BARK_URL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python3 -m backend.cloud_runner \
+            --prev-state _prev/state.json \
+            --prev-meta _prev/state_meta.json \
+            --out-state web/state.json \
+            --out-meta _prev/out_meta.json
+
+      - name: Persist single-commit state snapshot to gh-pages
+        run: |
+          mkdir -p _site
+          cp web/index.html web/index.css web/app.js web/history.json web/state.json _site/
+          cp _prev/out_meta.json _site/state_meta.json
+          touch _site/.nojekyll
+
+          cd _site
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan gh-pages
+          git add .
+          git commit -m "chore: cloud radar snapshot $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages:gh-pages
+
+      - name: Prepare public artifact (without internal meta)
+        run: |
+          rm -f _site/state_meta.json
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages CDN
+        id: deployment
+        uses: actions/deploy-pages@v4
