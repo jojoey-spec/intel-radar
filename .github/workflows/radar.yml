@@ -62,7 +62,15 @@ jobs:
             sleep 1
           done
           if ! ollama list | grep -q "qwen3:4b-instruct"; then
-            ollama pull qwen3:4b-instruct
+            if ollama pull hf.co/unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M; then
+              ollama cp hf.co/unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M qwen3:4b-instruct
+              ollama rm hf.co/unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M || true
+            elif ollama pull hf.co/bartowski/Qwen_Qwen3-4B-Instruct-2507-GGUF:Q4_K_M; then
+              ollama cp hf.co/bartowski/Qwen_Qwen3-4B-Instruct-2507-GGUF:Q4_K_M qwen3:4b-instruct
+              ollama rm hf.co/bartowski/Qwen_Qwen3-4B-Instruct-2507-GGUF:Q4_K_M || true
+            else
+              ollama pull qwen3:4b-instruct
+            fi
           fi
 
       - name: Run Batch Intelligence Scan
