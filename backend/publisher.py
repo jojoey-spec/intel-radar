@@ -150,6 +150,7 @@ def publish_to_github_pages(repo: str, token: str, node_name: str = "", model_id
         "index.html": (WEB_DIR / "index.html").read_text(encoding="utf-8"),
         "index.css": (WEB_DIR / "index.css").read_text(encoding="utf-8"),
         "app.js": (WEB_DIR / "app.js").read_text(encoding="utf-8"),
+        "history.json": (WEB_DIR / "history.json").read_text(encoding="utf-8"),
         "state.json": json.dumps(state_payload, ensure_ascii=False, indent=2),
         ".nojekyll": "",
     }

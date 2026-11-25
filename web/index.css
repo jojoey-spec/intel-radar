@@ -764,6 +764,121 @@ body {
 }
 
 /* ==========================================================================
+   Historical Funnel Chronicle Timeline
+   ========================================================================== */
+
+.history-toolbar {
+  background: var(--bg-surface);
+  border: 1px solid var(--line-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow-card);
+}
+
+.history-select-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.history-select-label {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--ink-primary);
+  white-space: nowrap;
+}
+
+.history-range-select {
+  width: auto;
+  min-width: 270px;
+  font-weight: 600;
+}
+
+.history-meta-note {
+  font-size: 0.81rem;
+  color: var(--ink-secondary);
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.timeline-year-block {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.timeline-year-rail {
+  position: sticky;
+  top: 76px;
+  text-align: right;
+  padding-right: 16px;
+  border-right: 2px solid var(--line-strong);
+}
+
+.timeline-year-num {
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  line-height: 1.1;
+}
+
+.timeline-year-count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  margin-top: 3px;
+}
+
+.impact-callout {
+  background: var(--bg-sunken);
+  border-radius: var(--radius-sm);
+  padding: 8px 11px;
+  font-size: 0.82rem;
+  color: var(--ink-primary);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.impact-callout strong {
+  font-weight: 600;
+  color: var(--signal-nuclear);
+}
+
+@media (max-width: 680px) {
+  .timeline-year-block {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .timeline-year-rail {
+    position: static;
+    text-align: left;
+    border-right: none;
+    border-bottom: 1px solid var(--line-strong);
+    padding-bottom: 6px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .history-range-select {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* ==========================================================================
    Modals (Sandbox Lab & Settings)
    ========================================================================== */
 
@@ -942,12 +1057,13 @@ body {
   .mode-tabs {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
   .mode-tab {
     justify-content: center;
-    padding: 8px 10px;
-    font-size: 0.84rem;
+    padding: 8px 6px;
+    font-size: 0.78rem;
+    gap: 4px;
   }
   .domain-filters {
     width: 100%;

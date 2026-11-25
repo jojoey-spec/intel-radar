@@ -5,6 +5,7 @@ import hashlib
 import html
 import json
 import re
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -88,20 +89,27 @@ def _atom_link(elem: ET.Element) -> str:
 
 
 def fetch_single_feed(feed: Dict[str, str]) -> List[Dict[str, Any]]:
-    req = urllib.request.Request(feed["url"], headers={"User-Agent": USER_AGENT})
+    feed_url = feed["url"]
+    max_items = MAX_ITEMS_PER_FEED
+    if feed.get("kind") == "hn_megashock":
+        since_ts = int(time.time()) - 5 * 86400
+        feed_url = f"https://hn.algolia.com/api/v1/search?tags=story&numericFilters=points>800,created_at_i>{since_ts}&hitsPerPage=15"
+        max_items = 15
+
+    req = urllib.request.Request(feed_url, headers={"User-Agent": USER_AGENT})
     try:
         with urllib.request.urlopen(req, timeout=8) as resp:
             raw_bytes = resp.read()
     except Exception:
         return []
 
-    if feed.get("kind") == "hn_json":
+    if feed.get("kind") in ("hn_json", "hn_megashock"):
         try:
             payload = json.loads(raw_bytes.decode("utf-8", errors="ignore"))
         except Exception:
             return []
         items: List[Dict[str, Any]] = []
-        for hit in payload.get("hits", [])[:MAX_ITEMS_PER_FEED]:
+        for hit in payload.get("hits", [])[:max_items]:
             title = (hit.get("title") or "").strip()
             url = (hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID')}").strip()
             points = int(hit.get("points") or 0)

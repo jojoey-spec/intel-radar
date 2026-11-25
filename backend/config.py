@@ -129,6 +129,43 @@ DEFAULT_FEEDS = [
         "domain": "AI・科技巨頭",
         "authority": "community_signal",
     },
+    {
+        "id": "hn_megashock",
+        "name": "Hacker News 核彈高分榜 (>800pts)",
+        "url": "https://hn.algolia.com/api/v1/search?tags=story&hitsPerPage=15",
+        "kind": "hn_megashock",
+        "stream": "major",
+        "domain": "科學・能源",
+        "authority": "tier1",
+    },
+    # --- Tier-1 Fundamental Science & Mathematics ---
+    {
+        "id": "nature_news",
+        "name": "Nature",
+        "url": "https://www.nature.com/nature.rss",
+        "kind": "rss",
+        "stream": "major",
+        "domain": "科學・能源",
+        "authority": "tier1",
+    },
+    {
+        "id": "quanta",
+        "name": "Quanta Magazine",
+        "url": "https://www.quantamagazine.org/feed/",
+        "kind": "rss",
+        "stream": "major",
+        "domain": "科學・能源",
+        "authority": "tier1",
+    },
+    {
+        "id": "new_scientist",
+        "name": "New Scientist",
+        "url": "https://www.newscientist.com/feed/home/",
+        "kind": "rss",
+        "stream": "major",
+        "domain": "科學・能源",
+        "authority": "tier1",
+    },
     # --- Rumor Mill, Supply Chain, Silicon & Gaming Leaks ---
     {
         "id": "macrumors",

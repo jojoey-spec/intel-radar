@@ -75,6 +75,10 @@
         🕵️ 小道消息傳言版
         <span class="tab-count" id="rumorTabBadge">0</span>
       </button>
+      <button class="mode-tab" id="tabHistoryBtn" role="tab" aria-selected="false" data-target="historyPanel" type="button">
+        📜 歷史大事座標
+        <span class="tab-count" id="historyTabBadge">0</span>
+      </button>
     </div>
 
     <div class="domain-filters" id="domainFilters">
@@ -84,6 +88,7 @@
       <button class="filter-chip" data-domain="Apple・供應鏈" type="button">Apple・供應鏈</button>
       <button class="filter-chip" data-domain="國際政經" type="button">國際政經</button>
       <button class="filter-chip" data-domain="金融市場" type="button">金融市場</button>
+      <button class="filter-chip" data-domain="科學・能源" type="button">科學・數學突破</button>
       <button class="filter-chip" data-domain="遊戲・娛樂爆料" type="button">遊戲・娛樂爆料</button>
     </div>
   </nav>
@@ -162,6 +167,26 @@
           <div class="card-stack" id="rumorUnlikelyList"></div>
         </div>
       </div>
+    </section>
+
+    <!-- Panel 3: Funnel Historical Chronicle (1y / 5y / 10y / 30y) -->
+    <section class="view-panel" id="historyPanel" aria-labelledby="tabHistoryBtn">
+      <div class="history-toolbar">
+        <div class="history-select-group">
+          <label class="history-select-label" for="historyRangeSelect">時間跨度與濃縮門檻</label>
+          <select class="form-select history-range-select" id="historyRangeSelect">
+            <option value="1">過去 1 年（Lv.8.5+ 年度大事）</option>
+            <option value="5">過去 5 年（Lv.9.0+ 五年格局劇變）</option>
+            <option value="10" selected>過去 10 年（Lv.9.5+ 十年時代轉折）</option>
+            <option value="30">過去 30 年（Lv.10 教科書級歷史座標）</option>
+          </select>
+        </div>
+        <div class="history-meta-note" id="historyMetaNote">
+          漏斗濃縮式：時間跨度越長，入選門檻越嚴格；未來抓到的 Lv.9+ 核彈新聞也會自動沉澱進來。
+        </div>
+      </div>
+
+      <div class="timeline-container" id="historyTimelineList"></div>
     </section>
   </main>
 

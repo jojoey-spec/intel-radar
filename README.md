@@ -1,18 +1,25 @@
-# Intel Radar // 個人情報雷達 v0.1
+# Intel Radar // 個人情報雷達 v0.2 (100% Cloud + 30-Year Funnel Chronicle)
 
-純本地 Apple Silicon (`MLX`) 驅動的個人情報守門員：
-1. **🚨 世界重大情報（不夠大條絕不吵你）**：併發聚合 18 個全球一線新聞與科技信源（BBC、NYT、CNBC、Guardian、TechMeme、The Verge、Ars Technica、Hacker News 等），只有達到 **Lv.9–10 核彈級劇變** 才主動發通知；Lv.7–8 靜音收錄，日常雜訊直接攔截。
-2. **🕵️ 小道消息傳言版（33% / 67% 三欄證據計分制）**：自動從爆料與供應鏈管道（MacRumors、9to5Mac、Wccftech、Tom's Hardware、Insider Gaming 等）收集傳聞，禁止模型亂猜機率，改由**客觀證據指標 + 多方共振**計算可信度，分為：
-   - **🟢 可能性極高 (`68% – 100%`)**：硬證據流出（FCC/跑分庫/程式碼）或多方獨立信源交叉印證
-   - **🟡 待觀察風聲 (`34% – 67%`)**：具紀錄爆料客或單一供應鏈消息
-   - **🔴 不太可信 (`0% – 33%`)**：孤證匿名爆料或誇大臆測
-3. **📱 手機端推播預留**：內建 macOS 原生通知，並已接好 **ntfy.sh**、**iOS Bark** 與 **Telegram Bot** 推播介面，在網頁右上角「⚙️ 通知與門檻」填入即可串上手機。
+線上看板網址：**[https://jojoey-spec.github.io/intel-radar/](https://jojoey-spec.github.io/intel-radar/)**
 
-## 一鍵啟動
+## 三大核心模組
 
-```bash
-cd /Users/joeychen/Documents/Personal/intel-radar
-./run.sh
-```
+1. **🚨 世界重大情報（不夠大條絕不吵你）**
+   - 聚合 22 個全球政經、財經、科技與基礎科學權威信源（含 BBC、NYT、CNBC、TechMeme、Nature、Quanta Magazine、New Scientist 與 Hacker News 5日 >800分核彈榜）。
+   - 僅 **Lv.9–10** 核彈級劇變主動推播（並自動沉澱進歷史大事時間軸）；**Lv.7–8** 靜音收錄；日常促銷與雜訊自動攔截。
 
-啟動後瀏覽器會自動打開戰情室：`http://127.0.0.1:8765`
+2. **🕵️ 小道消息傳言版（33% / 67% 三欄證據計分制）**
+   - 依客觀證據指標（硬證據流出 / 爆料紀錄 / 多方交叉印證 / 細節具體度）換算可信度，分為 **可能性極高 (68–100%)**、**待觀察 (34–67%)**、**不太可信 (0–33%)**，支援自動升檔通知。
+
+3. **📜 歷史大事座標（方案 A：漏斗濃縮式 1 / 5 / 10 / 30 年）**
+   - **過去 1 年**：Lv.8.5+ 年度大事（並與雲端即時抓到的核彈新聞自動連動沉澱）
+   - **過去 5 年**：Lv.9.0+ 五年格局劇變
+   - **過去 10 年**：Lv.9.5+ 十年時代轉折
+   - **過去 30 年**：Lv.10 教科書級歷史座標（1996–2026）
+   - 完整支援上方領域按鈕交叉篩選（例如一鍵看「過去 30 年 × 半導體・晶片」或「過去 30 年 × 科學・數學突破」）。
+
+## 全雲端免費自動運行（GitHub Actions + GitHub Models）
+
+透過 `.github/workflows/radar.yml` 每 **20 分鐘**在 GitHub 免費算力上執行 `python3 -m backend.cloud_runner`：
+- 採用 **整批打包（Batch Prompting）** 呼叫免費內建的 GitHub Models (`openai/gpt-4o-mini`)，每輪最多僅消耗 1 次請求（無新事件時消耗 0 次），完全無需開啟個人電腦。
+- 如需串接手機推播，可在 GitHub Repo `Settings -> Secrets and variables -> Actions` 新增 `NTFY_TOPIC`、`BARK_URL` 或 `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID`。

@@ -4,6 +4,7 @@
 
 (() => {
   let appState = null;
+  let historyData = [];
   let activeDomain = 'ALL';
   let pollTimer = null;
   let isStaticMode = false;
@@ -293,6 +294,128 @@
     $('rumorUnlikelyList').innerHTML = filteredUnlikely.length
       ? filteredUnlikely.map(renderRumorCard).join('')
       : `<div class="empty-col-note">尚無低可信度傳聞</div>`;
+
+    renderHistoryTimeline();
+  }
+
+  function parseYearMonth(ym) {
+    const parts = String(ym || '2026-01').split('-');
+    return (Number(parts[0]) || 2026) * 12 + (Number(parts[1]) || 1);
+  }
+
+  function renderHistoryTimeline() {
+    const rangeYears = Number($('historyRangeSelect')?.value || 10);
+    const now = new Date();
+    const nowYm = now.getFullYear() * 12 + (now.getMonth() + 1);
+    // Allow 14 months for "past 1 year" so major year-end turns stay visible
+    const windowMonths = rangeYears === 1 ? 14 : rangeYears * 12 + 6;
+    const minYm = nowYm - windowMonths;
+    const requiredTier = rangeYears; // 1 -> >=1, 5 -> >=5, 10 -> >=10, 30 -> >=30
+
+    // Merge live auto-captured nuclear alerts with curated chronicle
+    const autoList = Array.isArray(appState?.auto_history) ? appState.auto_history : [];
+    const seenTitles = new Set();
+    const combined = [];
+
+    for (const item of [...autoList, ...historyData]) {
+      const key = String(item.title_zh || '').slice(0, 14);
+      if (seenTitles.has(key)) continue;
+      seenTitles.add(key);
+      combined.push(item);
+    }
+
+    const filtered = combined.filter((m) => {
+      if (!matchesDomain(m)) return false;
+      const tier = Number(m.funnel_tier || 1);
+      if (tier < requiredTier) return false;
+      return parseYearMonth(m.date) >= minYm;
+    });
+
+    filtered.sort((a, b) => parseYearMonth(b.date) - parseYearMonth(a.date));
+
+    $('historyTabBadge').textContent = String(filtered.length);
+
+    const tierDescMap = {
+      1: 'Lv.8.5+ 年度級重大事件',
+      5: 'Lv.9.0+ 五年格局劇變',
+      10: 'Lv.9.5+ 十年時代轉折',
+      30: 'Lv.10 教科書級歷史座標',
+    };
+    const domainNote = activeDomain === 'ALL' ? '全部領域' : activeDomain;
+    $('historyMetaNote').innerHTML = `漏斗門檻：<strong>${tierDescMap[rangeYears]}</strong> · 領域：<strong>${escapeHtml(domainNote)}</strong> · 共收錄 <strong>${filtered.length}</strong> 件歷史座標`;
+
+    const container = $('historyTimelineList');
+    if (!filtered.length) {
+      container.innerHTML = `<div class="empty-col-note">此時間跨度與領域組合下尚無對應等級的歷史紀錄，可切換至「全部領域」或拉長時間跨度查看。</div>`;
+      return;
+    }
+
+    // Group by year descending
+    const byYear = new Map();
+    for (const item of filtered) {
+      const yr = item.year || String(item.date || '').slice(0, 4);
+      if (!byYear.has(yr)) byYear.set(yr, []);
+      byYear.get(yr).push(item);
+    }
+
+    const htmlBlocks = [];
+    for (const [yr, items] of byYear.entries()) {
+      const cardsHtml = items
+        .map((it) => {
+          const isLv10 = String(it.level_label || '').includes('10');
+          const lvlCls = isLv10 ? 'level-tag nuclear' : 'level-tag';
+          const autoBadge = it.auto_captured ? '<span class="sandbox-tag">⚡ 雷達自動沉澱</span>' : '';
+          const linkHtml = it.url && it.url !== '#'
+            ? `<a class="source-link" href="${escapeHtml(it.url)}" target="_blank" rel="noopener noreferrer">背景文獻 / 維基參考 ↗</a>`
+            : '<span>歷史檔案</span>';
+
+          return `
+            <article class="intel-card">
+              <div class="card-meta-top">
+                <div class="meta-badges">
+                  <span class="${lvlCls}">${escapeHtml(it.level_label || 'Lv.9')}</span>
+                  <span class="domain-tag">${escapeHtml(it.domain)}</span>
+                  ${autoBadge}
+                </div>
+                <span class="time-stamp">${escapeHtml(it.date)}</span>
+              </div>
+              <h3 class="card-headline">${escapeHtml(it.title_zh)}</h3>
+              <p class="card-summary">${escapeHtml(it.summary_zh)}</p>
+              ${it.impact_zh ? `<div class="impact-callout"><strong>歷史座標影響：</strong>${escapeHtml(it.impact_zh)}</div>` : ''}
+              <div class="card-footer">
+                <div class="source-links">${linkHtml}</div>
+                <span>漏斗層級：近 ${it.funnel_tier} 年代表作</span>
+              </div>
+            </article>
+          `;
+        })
+        .join('');
+
+      htmlBlocks.push(`
+        <div class="timeline-year-block">
+          <div class="timeline-year-rail">
+            <div class="timeline-year-num">${escapeHtml(yr)}</div>
+            <div class="timeline-year-count">${items.length} 件座標</div>
+          </div>
+          <div class="card-stack">${cardsHtml}</div>
+        </div>
+      `);
+    }
+
+    container.innerHTML = htmlBlocks.join('');
+  }
+
+  async function loadHistoryChronicle() {
+    try {
+      const resp = await fetch(`./history.json?v=${Date.now()}`);
+      if (resp.ok) {
+        const data = await resp.json();
+        historyData = Array.isArray(data.milestones) ? data.milestones : [];
+        renderHistoryTimeline();
+      }
+    } catch {
+      // ignore
+    }
   }
 
   // --- API / Static State Polling ---
@@ -557,6 +680,12 @@
       });
     });
 
+    // History range dropdown
+    const histSelect = $('historyRangeSelect');
+    if (histSelect) {
+      histSelect.addEventListener('change', renderHistoryTimeline);
+    }
+
     // Sandbox modal
     $('btnOpenSandbox').addEventListener('click', () => openSandboxWithPreset('jensen'));
     $('btnCloseSandbox').addEventListener('click', () => $('sandboxModal').classList.remove('open'));
@@ -584,5 +713,6 @@
   }
 
   initEvents();
+  loadHistoryChronicle();
   fetchState();
 })();
