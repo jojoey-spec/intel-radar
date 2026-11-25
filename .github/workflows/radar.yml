@@ -18,7 +18,7 @@ concurrency:
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout main source
         uses: actions/checkout@v4
@@ -37,27 +37,33 @@ jobs:
             echo "{}" > _prev/state_meta.json
           fi
 
-      - name: Cache Ollama binary & Qwen3-4B-Instruct weights
+      - name: Cache Ollama CPU runtime & Qwen3-4B-Instruct weights
         uses: actions/cache@v4
         with:
           path: |
             ~/.ollama/models
             ~/ollama-bin
-          key: ollama-qwen3-4b-instruct-v1
+          key: ollama-cpu-qwen3-4b-instruct-v2
 
       - name: Start Ollama on GitHub Runner CPU
         run: |
           mkdir -p ~/ollama-bin
           if [ ! -x ~/ollama-bin/bin/ollama ] && [ ! -x ~/ollama-bin/ollama ]; then
-            curl -fsSL https://ollama.com/download/ollama-linux-amd64.tgz | tar -xz -C ~/ollama-bin
+            command -v zstd >/dev/null 2>&1 || (sudo apt-get update && sudo apt-get install -y zstd)
+            curl -fsSL https://ollama.com/download/ollama-linux-amd64.tar.zst | zstd -d | tar -xf - -C ~/ollama-bin
+            rm -rf ~/ollama-bin/lib/ollama/cuda* ~/ollama-bin/lib/ollama/rocm* ~/ollama-bin/lib/ollama/vulkan* || true
           fi
           export PATH="$HOME/ollama-bin/bin:$HOME/ollama-bin:$PATH"
+          export OLLAMA_NUM_PARALLEL=1
+          export OLLAMA_KEEP_ALIVE=5m
           nohup ollama serve > /tmp/ollama.log 2>&1 &
-          for i in $(seq 1 20); do
+          for i in $(seq 1 30); do
             if curl -sf http://127.0.0.1:11434/api/tags >/dev/null; then break; fi
             sleep 1
           done
-          ollama pull qwen3:4b-instruct
+          if ! ollama list | grep -q "qwen3:4b-instruct"; then
+            ollama pull qwen3:4b-instruct
+          fi
 
       - name: Run Batch Intelligence Scan
         env:

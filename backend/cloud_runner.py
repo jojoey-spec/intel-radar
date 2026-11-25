@@ -26,6 +26,7 @@ from .notifier import dispatch_alert
 DEFAULT_LLM_URL = "http://127.0.0.1:11434/v1/chat/completions"
 DEFAULT_CLOUD_MODEL = "qwen3:4b-instruct"
 MAX_CLUSTERS_PER_BATCH = 8
+MINI_BATCH_SIZE = 4
 MAX_SEEN_HASHES = 3500
 
 BATCH_SYSTEM_PROMPT = """你是一個極度嚴謹、零幻覺的「全球情報與傳言批次判讀守門員」。
@@ -99,7 +100,7 @@ def call_github_models_batch(clusters: List[Dict[str, Any]], token: str, model: 
             {"role": "user", "content": user_content},
         ],
         "temperature": 0.0,
-        "max_tokens": 3600,
+        "max_tokens": 1800,
         "response_format": {"type": "json_object"},
     }
 
@@ -107,7 +108,7 @@ def call_github_models_batch(clusters: List[Dict[str, Any]], token: str, model: 
     headers = {
         "Content-Type": "application/json; charset=utf-8",
         "Accept": "application/json",
-        "User-Agent": "IntelRadar-CloudRunner/0.2",
+        "User-Agent": "IntelRadar-CloudRunner/0.3",
     }
     if token:
         headers["Authorization"] = f"Bearer {token}"
@@ -119,7 +120,7 @@ def call_github_models_batch(clusters: List[Dict[str, Any]], token: str, model: 
         method="POST",
     )
 
-    with urllib.request.urlopen(req, timeout=240) as resp:
+    with urllib.request.urlopen(req, timeout=300) as resp:
         raw_resp = json.loads(resp.read().decode("utf-8", errors="ignore"))
 
     content = (
@@ -210,10 +211,20 @@ def run_cloud_update(prev_state_path: Path, prev_meta_path: Path, out_state_path
     batch_stats = {"major_alerts": 0, "archived_major": 0, "rumors_added": 0, "noise_filtered": deal_noise_count}
 
     if eval_slice:
-        print(f"[CloudRunner] Calling LLM ({model}) for {len(eval_slice)} new clusters in 1 batch request...")
-        ai_map = call_github_models_batch(eval_slice, token=token, model=model)
+        print(f"[CloudRunner] Evaluating {len(eval_slice)} new clusters via {model} (mini-batch={MINI_BATCH_SIZE})...")
+        ai_map: Dict[int, Dict[str, Any]] = {}
+        for start in range(0, len(eval_slice), MINI_BATCH_SIZE):
+            chunk = eval_slice[start : start + MINI_BATCH_SIZE]
+            try:
+                sub_map = call_github_models_batch(chunk, token=token, model=model)
+                for rel_idx in range(len(chunk)):
+                    ai_map[start + rel_idx] = sub_map.get(rel_idx, {"kind": "noise"})
+            except Exception as exc:
+                print(f"[CloudRunner] Warning: mini-batch at offset {start} failed ({exc}); skipping chunk for next cycle.")
 
         for idx, cl in enumerate(eval_slice):
+            if idx not in ai_map:
+                continue
             parsed = ai_map.get(idx, {})
             title = cl["lead_title"]
             summary = cl.get("lead_summary", "")
