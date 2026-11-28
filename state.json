@@ -1,0 +1,3535 @@
+{
+  "major_alerts": [
+    {
+      "fingerprint": "19762616c89c046985",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "伊朗無人機襲擊科威特致兩名義大利人喪生",
+      "summary_zh": "伊朗對科威特的無人機襲擊造成兩名義大利人死亡，反映地區軍事緊張。",
+      "raw_title": "Two Italians Killed in Iranian Drone Attack on Kuwait, Officials Say",
+      "impact_level": 10,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "🔁 2 家信源共振",
+        "🌍 重大地緣/國家級事件"
+      ],
+      "reasoning_zh": "官方確認襲擊致死，屬國際衝突直接傷亡",
+      "sources": [
+        {
+          "name": "NYT World",
+          "url": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html",
+          "title": "Two Italians Killed in Iranian Drone Attack on Kuwait, Officials Say",
+          "authority": "tier1"
+        },
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
+          "title": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
+          "authority": "tier1"
+        }
+      ],
+      "source_count": 2,
+      "notified": true,
+      "created_at": "2026-11-27T00:15:59+00:00",
+      "updated_at": "2026-11-27T00:15:59+00:00"
+    }
+  ],
+  "major_archived": [
+    {
+      "fingerprint": "d5ff4826e0957fbd6e",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "加拿大最高法院支持魁北克宗教符號禁令",
+      "summary_zh": "加拿大最高法院維持魁北克公職人員禁戴宗教標誌的世俗主義法律。",
+      "raw_title": "Canada’s Top Court Lets Quebec Use Controversial Measure for Secularism Law",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "🔁 3 家信源共振",
+        "📌 重要產業/政策動態"
+      ],
+      "reasoning_zh": "三間一線外媒報導具體法律裁決，具實質政策影響",
+      "sources": [
+        {
+          "name": "NYT World",
+          "url": "https://www.nytimes.com/2026/11/27/world/canada/canada-supreme-court-quebec-religion-bill-21.html",
+          "title": "Canada’s Top Court Lets Quebec Use Controversial Measure for Secularism Law",
+          "authority": "tier1"
+        },
+        {
+          "name": "The Guardian World",
+          "url": "https://www.theguardian.com/world/2026/nov/27/canadas-top-court-upholds-quebec-law-barring-public-sector-workers-from-wearing-religious-symbols",
+          "title": "Canada’s top court upholds Quebec law barring public sector workers from wearing religious symbols",
+          "authority": "tier1"
+        },
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq3dgpy9lem3o?at_medium=RSS&at_campaign=rss",
+          "title": "Canada's top court largely upholds Quebec ban on religious symbols for public servants",
+          "authority": "tier1"
+        }
+      ],
+      "source_count": 3,
+      "notified": false,
+      "created_at": "2026-11-27T18:39:52+00:00",
+      "updated_at": "2026-11-27T18:39:52+00:00"
+    },
+    {
+      "fingerprint": "76bc11ff31ec4d5f30",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "黃仁勳回任 Nvidia 董座，Denny's 語氣熱烈支持",
+      "summary_zh": "黃仁勳辭職後回任 Nvidia 董事長，Denny's 發表支持聲明。",
+      "raw_title": "Jensen Huang Is Back, and So Is His Plaque at Denny’s",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "🔁 3 家信源共振",
+        "📌 重要產業/政策動態"
+      ],
+      "reasoning_zh": "黃仁勳回任已確認，Denny's 官方聲明為一線外媒報導",
+      "sources": [
+        {
+          "name": "NYT Technology",
+          "url": "https://www.nytimes.com/2026/11/26/business/dennys-jensen-huang-nvidia-plaque.html",
+          "title": "Jensen Huang Is Back, and So Is His Plaque at Denny’s",
+          "authority": "tier1"
+        },
+        {
+          "name": "CNBC Tech",
+          "url": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
+          "title": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO",
+          "authority": "tier1"
+        },
+        {
+          "name": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/tech-industry/big-tech/dennys-touts-renewed-support-for-nvidia-ceo-jensen-huang-following-reinstatement-says-some-things-you-just-dont-take-off-the-menu",
+          "title": "Denny’s touts renewed support for Nvidia CEO Jensen Huang following reinstatement",
+          "authority": "specialist_media"
+        }
+      ],
+      "source_count": 3,
+      "notified": false,
+      "created_at": "2026-11-27T00:15:59+00:00",
+      "updated_at": "2026-11-27T00:15:59+00:00"
+    },
+    {
+      "fingerprint": "595a0152c59ad3d2eb",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "通義千問 GLM-5.4 推出首個迴圈轉換器",
+      "summary_zh": "通義千問發布 GLM-5.4，引入首個迴圈轉換器，推動編碼能力進化。",
+      "raw_title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒",
+        "🔥 HN 1179 pts"
+      ],
+      "reasoning_zh": "GLM-5.4 為具體產品發布，技術細節明確，屬AI領域重大進展",
+      "sources": [
+        {
+          "name": "Hacker News 核彈高分榜 (>800pts)",
+          "url": "https://z.ai/blog/glm-5.4",
+          "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+          "authority": "tier1"
+        }
+      ],
+      "source_count": 1,
+      "notified": false,
+      "created_at": "2026-11-26T05:25:48+00:00",
+      "updated_at": "2026-11-26T05:25:48+00:00"
+    },
+    {
+      "fingerprint": "17b1d0f11fbb853d3f",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "1Password 公告內部安全事件 資料遭竊",
+      "summary_zh": "1Password 宣布員工 GitHub 帳戶遭入侵，部分用戶姓名與電郵被取得，但帳戶內容未受影響。",
+      "raw_title": "1Password confirms security incident, here’s what you need to know",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "🔁 2 家信源共振",
+        "📌 重要產業/政策動態",
+        "🔥 HN 1286 pts"
+      ],
+      "reasoning_zh": "官方公告具體揭露事件與影響範圍，有硬證據支持",
+      "sources": [
+        {
+          "name": "9to5Mac",
+          "url": "https://9to5mac.com/2026/11/25/1password-confirms-security-incident-heres-what-you-need-to-know/",
+          "title": "1Password confirms security incident, here’s what you need to know",
+          "authority": "insider_media"
+        },
+        {
+          "name": "Hacker News 核彈高分榜 (>800pts)",
+          "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+          "title": "1Password Security Incident",
+          "authority": "tier1"
+        }
+      ],
+      "source_count": 2,
+      "notified": false,
+      "created_at": "2026-11-26T05:25:48+00:00",
+      "updated_at": "2026-11-26T05:25:48+00:00"
+    },
+    {
+      "fingerprint": "b084456955b8a2459e",
+      "kind": "major",
+      "domain": "半導體・晶片",
+      "title_zh": "FCC核准太空部署100萬AI晶片衛星",
+      "summary_zh": "美國聯邦通訊委員會批准太空部署載有AI晶片的衛星，屬重大科技動向。",
+      "raw_title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "🔁 3 家信源共振",
+        "📌 重要產業/政策動態"
+      ],
+      "reasoning_zh": "FCC正式核准太空部署AI衛星，具產業影響力且有外媒證實",
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+          "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+          "authority": "tier1"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/",
+          "title": "The FCC has authorized SpaceX to deploy 1 million satellites",
+          "authority": "tier1"
+        },
+        {
+          "name": "CNBC Tech",
+          "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+          "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
+          "authority": "tier1"
+        }
+      ],
+      "source_count": 3,
+      "notified": false,
+      "created_at": "2026-11-25T23:27:41+00:00",
+      "updated_at": "2026-11-25T23:27:41+00:00"
+    },
+    {
+      "id": 269,
+      "fingerprint": "48f320670c1bb869a4",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "華為被指盜取美商機密但無罪判決",
+      "summary_zh": "美國法院判華為盜取貿易機密，但無罪判決。",
+      "raw_title": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方法院判決確認盜密罪名且具體公司名單",
+      "source_count": 2,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-25T09:44:24+08:00",
+      "updated_at": "2026-11-25T09:44:24+08:00",
+      "evidence_tags": [
+        "🔁 2 家信源共振",
+        "📌 重要產業/政策動態"
+      ],
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
+          "title": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+          "authority": "tier1"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1041820/huawei-guilty-trade-secrets-trial",
+          "title": "Huawei found guilty of stealing trade secrets",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "fingerprint": "de55099fa588cca4f5",
+      "kind": "major",
+      "domain": "金融市場",
+      "title_zh": "英國家庭預計面臨能源費暴漲",
+      "summary_zh": "英國氣價將於一月因新調控上限大幅上漲。",
+      "raw_title": "Households braced for soaring energy bills with new price cap to be announced",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "reasoning_zh": "官方法規調整已確認，影響民生與能源市場",
+      "sources": [
+        {
+          "name": "BBC Business",
+          "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss",
+          "title": "Households braced for soaring energy bills with new price cap to be announced",
+          "authority": "tier1"
+        }
+      ],
+      "source_count": 1,
+      "notified": false,
+      "created_at": "2026-11-25T05:05:15+00:00",
+      "updated_at": "2026-11-25T05:05:15+00:00"
+    },
+    {
+      "fingerprint": "5d313dc5246f423a4f",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "黃仁勳否認特朗普助其重返NVIDIA",
+      "summary_zh": "黃仁勳在內部會議中澄清未獲白宮協助重返職場。",
+      "raw_title": "Jensen Huang reportedly tells Nvidia staff it’s ‘not true’ Trump got him rehired",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "🔁 2 家信源共振"
+      ],
+      "reasoning_zh": "多權威媒體引述CEO公開否認，具產業影響",
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology",
+          "title": "Jensen Huang reportedly tells Nvidia staff it’s ‘not true’ Trump got him rehired",
+          "authority": "tier1"
+        },
+        {
+          "name": "CNBC Markets & World",
+          "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-employee-meeting.html",
+          "title": "Jensen Huang tells staff that Nvidia doesn't need a succession plan",
+          "authority": "tier1"
+        }
+      ],
+      "source_count": 2,
+      "notified": false,
+      "created_at": "2026-11-25T04:30:10+00:00",
+      "updated_at": "2026-11-25T04:30:10+00:00"
+    },
+    {
+      "id": 237,
+      "fingerprint": "d1bfc5bc84ab9e29ea",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "紐約禁止汽車訂閱與購後費用",
+      "summary_zh": "紐約市宣布禁止汽車訂閱服務及購車後附加費用。",
+      "raw_title": "New York Bans Subscription and Post-Purchase Fees on Cars",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "僅提及政策禁止，無具體執行細節",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:43:07+08:00",
+      "updated_at": "2026-11-24T21:43:07+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🔥 HN 494 pts"
+      ],
+      "sources": [
+        {
+          "name": "Hacker News Frontpage",
+          "url": "https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-signs-bill-restricting-exploitative-vehicle-subscription",
+          "title": "New York Bans Subscription and Post-Purchase Fees on Cars",
+          "authority": "community_signal"
+        }
+      ]
+    },
+    {
+      "id": 198,
+      "fingerprint": "a676070656bc11c6a0",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "Anthropic 在納斯達克掛牌上市",
+      "summary_zh": "Anthropic 宣布於納斯達克進行首次公開發行。",
+      "raw_title": "Anthropic’s Nasdaq debut",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方宣布納斯達克上市，具體資訊完整可驗證",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:28:16+08:00",
+      "updated_at": "2026-11-24T21:28:16+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒",
+        "🔥 HN 1145 pts"
+      ],
+      "sources": [
+        {
+          "name": "Hacker News 核彈高分榜 (>800pts)",
+          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+          "title": "Anthropic’s Nasdaq debut",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 196,
+      "fingerprint": "f6a0f1c9ef6dac4406",
+      "kind": "major",
+      "domain": "科學・能源",
+      "title_zh": "日產本田丰田將統一零件降本",
+      "summary_zh": "三大車廠將標準化零件以降低生產成本。",
+      "raw_title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "三大車廠合作統一零件標準以降本",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:28:12+08:00",
+      "updated_at": "2026-11-24T21:28:12+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒",
+        "🔥 HN 1388 pts"
+      ],
+      "sources": [
+        {
+          "name": "Hacker News 核彈高分榜 (>800pts)",
+          "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+          "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 195,
+      "fingerprint": "4d516f5f2b88119a09",
+      "kind": "major",
+      "domain": "科學・能源",
+      "title_zh": "胰臟癌新療法獲稱數十年來最大突破",
+      "summary_zh": "一種新藥療法被稱為胰臟癌治療的里程碑進展。",
+      "raw_title": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "Hacker News高熱度與權威媒體引述確認突破性",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:28:10+08:00",
+      "updated_at": "2026-11-24T21:28:10+08:00",
+      "evidence_tags": [
+        "🏛️ 一線權威外媒",
+        "🔥 HN 1391 pts"
+      ],
+      "sources": [
+        {
+          "name": "Hacker News 核彈高分榜 (>800pts)",
+          "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
+          "title": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 191,
+      "fingerprint": "0a3c62e4adcb258679",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "黃仁勳復出擔任英偉達執行長",
+      "summary_zh": "前工程師達雷爾·戴宣布辭職，指對黃仁勳離職缺乏透明度，現黃仁勳已重返職務。",
+      "raw_title": "Jensen Huang Reinstated as Nvidia CEO",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "黃仁勳已正式復出，有權威媒體與高熱度論壇證實",
+      "source_count": 2,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:28:02+08:00",
+      "updated_at": "2026-11-24T21:28:02+08:00",
+      "evidence_tags": [
+        "🔁 2 家信源共振",
+        "🔥 HN 1708 pts"
+      ],
+      "sources": [
+        {
+          "name": "Hacker News 核彈高分榜 (>800pts)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+          "title": "Jensen Huang Reinstated as Nvidia CEO",
+          "authority": "tier1"
+        },
+        {
+          "name": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/tech-industry/nvidia-engineer-that-quit-in-response-to-jensen-huang-resignation-welcomes-ceo-back-i-may-have-moved-too-quickly-says-robotics-engineer-who-made-viral-post",
+          "title": "Nvidia engineer who quit over Jensen Huang's exit says he 'may have moved too quickly'",
+          "authority": "specialist_media"
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "fingerprint": "afddb64d2b19882d1c",
+      "kind": "major",
+      "domain": "科學・能源",
+      "title_zh": "太空船成功進入水星軌道",
+      "summary_zh": "第二艘太空船成功抵達水星並進入軌道。",
+      "raw_title": "Spacecraft reaches Mercury on second-ever mission to enter its orbit",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "太空船進入水星軌道屬重大科學進展",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T12:20:31+08:00",
+      "updated_at": "2026-11-24T12:20:31+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🔥 HN 316 pts"
+      ],
+      "sources": [
+        {
+          "name": "Hacker News Frontpage",
+          "url": "https://www.theguardian.com/science/2026/nov/20/spacecraft-mercury-second-ever-mission-orbit-bepicolombo",
+          "title": "Spacecraft reaches Mercury on second-ever mission to enter its orbit",
+          "authority": "community_signal"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "fingerprint": "77cbbe46f7b2db82d1",
+      "kind": "major",
+      "domain": "金融市場",
+      "title_zh": "HPE四季報营收暴增50% 預告一季略超平均",
+      "summary_zh": "HPE四季營收年增50%達145億美元，預期一季收入略超平均但未達最樂觀估計。",
+      "raw_title": "HPE reports Q4 revenue up 50% YoY to $14.5B, vs. $14.3B est., forecasts Q1 revenue above the average estimates but below the highest; HPE drops 6%+ after hours (Dina Bass/Bloomberg)",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方公布具體營收與預期數據，屬重大財務動態",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T11:11:36+08:00",
+      "updated_at": "2026-11-24T11:11:36+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "TechMeme",
+          "url": "https://www.techmeme.com/261123/p44#a261123p44",
+          "title": "HPE reports Q4 revenue up 50% YoY to $14.5B, vs. $14.3B est., forecasts Q1 revenue above the average estimates but below the highest; HPE drops 6%+ after hours (Dina Bass/Bloomberg)",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "fingerprint": "ff7b4a1bce1e4ede49",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "川普政府對Megaspeed實施制裁",
+      "summary_zh": "川普政府將新加坡企業Megaspeed列入貿易黑名單。",
+      "raw_title": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "雙權威媒體報導具體制裁行動",
+      "source_count": 2,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T11:11:23+08:00",
+      "updated_at": "2026-11-24T11:11:23+08:00",
+      "evidence_tags": [
+        "🔁 2 家信源共振",
+        "📌 重要產業/政策動態"
+      ],
+      "sources": [
+        {
+          "name": "NYT Technology",
+          "url": "https://www.nytimes.com/2026/11/23/business/trump-administration-megaspeed-trade-blacklist-nvidia.html",
+          "title": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal",
+          "authority": "tier1"
+        },
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss",
+          "title": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "fingerprint": "4c9481e1f5bb0c6699",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "烏克蘭-navy drones擊沉俄羅斯新艦於利比亞近海",
+      "summary_zh": "烏克蘭軍方確認七架自製海軍無人機從母艦發射，擊沉俄羅斯新式巡防艦「梅爾庫裡」。",
+      "raw_title": "Ukraine Attack Off Coast of Libya Shows Reach of Its Naval Drones",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "雙權威媒體報導具體型號與行動細節",
+      "source_count": 2,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T11:11:22+08:00",
+      "updated_at": "2026-11-24T11:11:22+08:00",
+      "evidence_tags": [
+        "🔁 2 家信源共振",
+        "📌 重要產業/政策動態"
+      ],
+      "sources": [
+        {
+          "name": "NYT World",
+          "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
+          "title": "Ukraine Attack Off Coast of Libya Shows Reach of Its Naval Drones",
+          "authority": "tier1"
+        },
+        {
+          "name": "The Guardian World",
+          "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya",
+          "title": "Ukraine confirms it used naval drones to strike two Russian ships off Libya",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "fingerprint": "d1b23b26595e8a1dca",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "共和黨反彈抗議川普支持黃仁勳復職",
+      "summary_zh": "共和黨公開與川普決裂，威脅以監督權力反對其支持Nvidia執行長復職。",
+      "raw_title": "Republicans Break With Trump Over Jensen Huang’s Reinstatement at Nvidia",
+      "impact_level": 8,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "共和黨公開反對川普人事決定，具政治影響",
+      "source_count": 4,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T11:11:17+08:00",
+      "updated_at": "2026-11-24T11:11:17+08:00",
+      "evidence_tags": [
+        "🔁 4 家信源共振"
+      ],
+      "sources": [
+        {
+          "name": "NYT Technology",
+          "url": "https://www.nytimes.com/2026/11/23/technology/republicans-trump-jensen-huang-nvidia.html",
+          "title": "Republicans Break With Trump Over Jensen Huang’s Reinstatement at Nvidia",
+          "authority": "tier1"
+        },
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss",
+          "title": "Nvidia reinstates CEO Jensen Huang after affair with alleged spy as Trump says 'I made the deal'",
+          "authority": "tier1"
+        },
+        {
+          "name": "CNBC Markets & World",
+          "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
+          "title": "Trump sealed deal for Nvidia to rehire Jensen Huang as CEO",
+          "authority": "tier1"
+        },
+        {
+          "name": "CNBC Tech",
+          "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang-reinstatement-cnbc-interview-transcript.html",
+          "title": "Exclusive CNBC Transcript: See how Trump 'made the deal' to reinstate Huang as Nvidia CEO",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "fingerprint": "1a5921378f003b075c",
+      "kind": "major",
+      "domain": "Apple・供應鏈",
+      "title_zh": "Apple 領先中國雙十一手機銷售",
+      "summary_zh": "Counterpoint研究指出，Apple在雙十一期間中國市場銷售表現領先。",
+      "raw_title": "Apple claims six of China’s 10 bestselling smartphones during Singles’ Day",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "📌 重要產業/政策動態"
+      ],
+      "reasoning_zh": "具體銷售數據來自第三方研究機構，反映市場實際表現",
+      "sources": [
+        {
+          "name": "9to5Mac",
+          "url": "https://9to5mac.com/2026/11/27/apple-claims-six-of-chinas-10-bestselling-smartphones-during-singles-day/",
+          "title": "Apple claims six of China’s 10 bestselling smartphones during Singles’ Day",
+          "authority": "insider_media"
+        }
+      ],
+      "source_count": 1,
+      "notified": false,
+      "created_at": "2026-11-28T09:43:30+00:00",
+      "updated_at": "2026-11-28T09:43:30+00:00"
+    },
+    {
+      "fingerprint": "00fb98fc941d705b06",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "智利對 Apple 提起反壟斷訴訟",
+      "summary_zh": "智利競爭當局指控Apple濫用iOS生態壟斷地位。",
+      "raw_title": "Apple faces potential $80 million fine and App Store overhaul in Chile [U: Apple responds]",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "📌 重要產業/政策動態"
+      ],
+      "reasoning_zh": "涉及國際競爭法與平台經濟重大爭議，具產業影響",
+      "sources": [
+        {
+          "name": "9to5Mac",
+          "url": "https://9to5mac.com/2026/11/27/apple-faces-potential-80-million-fine-and-app-store-overhaul-in-chile/",
+          "title": "Apple faces potential $80 million fine and App Store overhaul in Chile [U: Apple responds]",
+          "authority": "insider_media"
+        }
+      ],
+      "source_count": 1,
+      "notified": false,
+      "created_at": "2026-11-28T09:43:30+00:00",
+      "updated_at": "2026-11-28T09:43:30+00:00"
+    },
+    {
+      "fingerprint": "8108aeb28d3d6c363a",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "Apple TV 剧集《Carême》獲國際艾美獎最佳劇集",
+      "summary_zh": "Apple 首部法語劇集《Carême》獲國際艾美獎，為公司第二座該獎項。",
+      "raw_title": "Apple TV's 'Carême' Wins International Emmy for Best Drama",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "📌 重要產業/政策動態"
+      ],
+      "reasoning_zh": "官方獲獎紀錄，具產業影響力",
+      "sources": [
+        {
+          "name": "MacRumors",
+          "url": "https://www.macrumors.com/2026/11/27/careme-wins-emmy/",
+          "title": "Apple TV's 'Carême' Wins International Emmy for Best Drama",
+          "authority": "insider_media"
+        }
+      ],
+      "source_count": 1,
+      "notified": false,
+      "created_at": "2026-11-28T01:41:03+00:00",
+      "updated_at": "2026-11-28T01:41:03+00:00"
+    },
+    {
+      "fingerprint": "181f94855606c32e7b",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "Meta調整Muse服務條款強化英國用戶權益",
+      "summary_zh": "英國版Muse服務條款比美國更保護用戶，由英國競爭管理局確認。",
+      "raw_title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the terms give users far more protections than in the US (Joseph Bambridge/Politico)",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "🔁 2 家信源共振",
+        "📌 重要產業/政策動態"
+      ],
+      "reasoning_zh": "CMA官方確認條款變更，具實證與政策意義",
+      "sources": [
+        {
+          "name": "TechMeme",
+          "url": "https://www.techmeme.com/261127/p8#a261127p8",
+          "title": "The CMA says Meta made changes to Muse's ToS in the UK to reflect the country's consumer law; the terms give users far more protections than in the US (Joseph Bambridge/Politico)",
+          "authority": "tier1"
+        }
+      ],
+      "source_count": 2,
+      "notified": false,
+      "created_at": "2026-11-27T18:39:52+00:00",
+      "updated_at": "2026-11-27T18:39:52+00:00"
+    },
+    {
+      "fingerprint": "dc75fb5cc86a9dffd7",
+      "kind": "major",
+      "domain": "Apple・供應鏈",
+      "title_zh": "蘋果Q3美國市場佔比升至57%創年度新高",
+      "summary_zh": "蘋果美國手機出貨量年增至57%，為唯一逆勢成長的主流品牌。",
+      "raw_title": "Report: Apple accounted for 57% of US smartphone shipments in Q3",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "📌 重要產業/政策動態"
+      ],
+      "reasoning_zh": "具體出貨數據已確認，反映市場實際表現",
+      "sources": [
+        {
+          "name": "9to5Mac",
+          "url": "https://9to5mac.com/2026/11/26/report-apple-accounted-for-57-of-us-smartphone-shipments-in-q3/",
+          "title": "Report: Apple accounted for 57% of US smartphone shipments in Q3",
+          "authority": "insider_media"
+        }
+      ],
+      "source_count": 1,
+      "notified": false,
+      "created_at": "2026-11-27T08:44:15+00:00",
+      "updated_at": "2026-11-27T08:44:15+00:00"
+    },
+    {
+      "fingerprint": "95373d515b7f139317",
+      "kind": "major",
+      "domain": "遊戲・娛樂爆料",
+      "title_zh": "Rockstar 工人反對成立工會，僅25%支持",
+      "summary_zh": "Rockstar Games 員工投票反對工會認可，93.2%參與，僅25%贊成。",
+      "raw_title": "UK workers at Rockstar Games vote against a union recognition deal, with only 25% voting in favor; source: 1,544 employees, or 93.2% of eligible workers, voted (Chris Kerr/Vertical Slice)",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "🔁 2 家信源共振"
+      ],
+      "reasoning_zh": "員工投票結果具體且為官方公布",
+      "sources": [
+        {
+          "name": "TechMeme",
+          "url": "https://www.techmeme.com/261126/p21#a261126p21",
+          "title": "UK workers at Rockstar Games vote against a union recognition deal, with only 25% voting in favor; source: 1,544 employees, or 93.2% of eligible workers, voted (Chris Kerr/Vertical Slice)",
+          "authority": "tier1"
+        },
+        {
+          "name": "Wccftech",
+          "url": "https://wccftech.com/grand-theft-auto-vi-rockstar-workers-reject-union-recognition/",
+          "title": "Workers at Grand Theft Auto VI Developer Rockstar Games Reject Union Recognition, With Only 25% Voting in Favor Among the 1,544 Employees Who Cast Ballots",
+          "authority": "leak_aggregator"
+        }
+      ],
+      "source_count": 2,
+      "notified": false,
+      "created_at": "2026-11-27T00:15:59+00:00",
+      "updated_at": "2026-11-27T00:15:59+00:00"
+    },
+    {
+      "fingerprint": "f34ac851eeed90e711",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "Apple下架中國AI聊天機器人因兒童安全問題",
+      "summary_zh": "因AI角色被指向未成年人發送不當訊息，Apple已從App Store下架Talkie。",
+      "raw_title": "Apple pulls popular Chinese AI chatbot from the App Store amid child safety concerns",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "📌 重要產業/政策動態"
+      ],
+      "reasoning_zh": "已確認Apple正式下架App，涉及重大安全政策調整",
+      "sources": [
+        {
+          "name": "9to5Mac",
+          "url": "https://9to5mac.com/2026/11/25/apple-pulls-popular-chinese-ai-chatbot-from-the-app-store-amid-child-safety-concerns/",
+          "title": "Apple pulls popular Chinese AI chatbot from the App Store amid child safety concerns",
+          "authority": "insider_media"
+        }
+      ],
+      "source_count": 1,
+      "notified": false,
+      "created_at": "2026-11-26T15:44:08+00:00",
+      "updated_at": "2026-11-26T15:44:08+00:00"
+    },
+    {
+      "fingerprint": "3f42658885ada882e7",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "1Password 安全事件：何種資料被取得",
+      "summary_zh": "1Password 確認員工 GitHub 帳戶遭入侵，部分用戶姓名與電郵遭竊，帳戶內容未受影響。",
+      "raw_title": "1Password Security Breach: What Was Accessed and What Wasn't",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "📌 重要產業/政策動態"
+      ],
+      "reasoning_zh": "與前項資訊重複且為官方確認，具備明確事實依據",
+      "sources": [
+        {
+          "name": "MacRumors",
+          "url": "https://www.macrumors.com/2026/11/25/1password-security-breach/",
+          "title": "1Password Security Breach: What Was Accessed and What Wasn't",
+          "authority": "insider_media"
+        }
+      ],
+      "source_count": 1,
+      "notified": false,
+      "created_at": "2026-11-26T05:25:48+00:00",
+      "updated_at": "2026-11-26T05:25:48+00:00"
+    },
+    {
+      "fingerprint": "82803995ca8e5a64ef",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "微軟宣佈升級重大事故應變等級至Code Red",
+      "summary_zh": "微軟因Outlook服務大規模中斷，宣布啟動Code Red應變機制。",
+      "raw_title": "Microsoft declares ‘Code Red’ after huge Outlook outage",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "🔁 2 家信源共振",
+        "📌 重要產業/政策動態"
+      ],
+      "reasoning_zh": "微軟正式宣布Code Red，為已發生重大服務中斷之回應",
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/1042025/microsoft-code-red-outlook-outage",
+          "title": "Microsoft declares ‘Code Red’ after huge Outlook outage",
+          "authority": "tier1"
+        },
+        {
+          "name": "9to5Mac",
+          "url": "https://9to5mac.com/2026/11/25/microsoft-declares-a-code-red-in-response-to-worst-ever-outage/",
+          "title": "Microsoft declares a Code Red in response to worst ever outage",
+          "authority": "insider_media"
+        }
+      ],
+      "source_count": 2,
+      "notified": false,
+      "created_at": "2026-11-25T14:54:30+00:00",
+      "updated_at": "2026-11-25T14:54:30+00:00"
+    },
+    {
+      "fingerprint": "5ad3c82fa8c1959ac7",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "美國陪審團判決華為貪污及竊密罪成立",
+      "summary_zh": "華為被控多項金融與貿易機密違法罪，陪審團判決有罪。",
+      "raw_title": "U.S. jury convicts Huawei in a criminal trial over fraud and trade secrets",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "evidence_tags": [
+        "🔁 2 家信源共振",
+        "📌 重要產業/政策動態"
+      ],
+      "reasoning_zh": "美國法院正式判決華為重大刑事罪名成立",
+      "sources": [
+        {
+          "name": "CNBC Tech",
+          "url": "https://www.cnbc.com/2026/11/25/huawei-fraud-trade-trial.html",
+          "title": "U.S. jury convicts Huawei in a criminal trial over fraud and trade secrets",
+          "authority": "tier1"
+        },
+        {
+          "name": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/tech-industry/huawei-convicted-of-money-laundering-conspiracy-to-steal-trade-secrets-and-fraud-by-us-jury-fbi-says-chinese-tech-giant-built-its-success-on-deception-and-theft",
+          "title": "Huawei convicted of money laundering, conspiracy to steal trade secrets, and fraud by US jury",
+          "authority": "specialist_media"
+        }
+      ],
+      "source_count": 2,
+      "notified": false,
+      "created_at": "2026-11-25T14:54:30+00:00",
+      "updated_at": "2026-11-25T14:54:30+00:00"
+    },
+    {
+      "id": 325,
+      "fingerprint": "34d8d149e2ccbad7c1",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "Where Winds Meet 支援 NVIDIA DLSS 5",
+      "summary_zh": "遊戲正式加入官方 DLSS 5 支援，為第六款採用該技術的作品。",
+      "raw_title": "Where Winds Meet Is the Sixth Game With Official NVIDIA DLSS 5 Support — Everstone: “It Offers a New Visual Experience, Enhancing the Sense of Immersion”",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方公告明確確認DLSS 5支援",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-25T10:00:04+08:00",
+      "updated_at": "2026-11-25T10:00:04+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態"
+      ],
+      "sources": [
+        {
+          "name": "Wccftech",
+          "url": "https://wccftech.com/where-winds-meet-nvidia-dlss5-interview-everstone-studio/",
+          "title": "Where Winds Meet Is the Sixth Game With Official NVIDIA DLSS 5 Support — Everstone: “It Offers a New Visual Experience, Enhancing the Sense of Immersion”",
+          "authority": "leak_aggregator"
+        }
+      ]
+    },
+    {
+      "id": 318,
+      "fingerprint": "bbc5b3cc7bdf1cbb2b",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "Nvidia 董事長回任引發AI企業債務擔憂",
+      "summary_zh": "Nvidia執行長黃仁勳回任後，市場擔憂多家公司AI債務風險上升。",
+      "raw_title": "AI debt markets shudder as Nvidia's top 'banker' returns",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "執行長回任引發市場對AI債務風險擔憂",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-25T09:59:49+08:00",
+      "updated_at": "2026-11-25T09:59:49+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "CNBC Tech",
+          "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-ai-credit-markets.html",
+          "title": "AI debt markets shudder as Nvidia's top 'banker' returns",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 317,
+      "fingerprint": "73d8fd5dfcb2bda9d5",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "戴爾Q3營收年增超一倍，宣布250億買回股票",
+      "summary_zh": "戴爾第三季營收年增逾一倍，主因AI伺服器需求旺盛，同步授權250億美元股票買回。",
+      "raw_title": "Dell earnings beat on AI strength, company authorizes $25 billion buyback",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "Q3營收雙倍增長由AI伺服器驅動，具體數字與買回金額明確",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-25T09:59:47+08:00",
+      "updated_at": "2026-11-25T09:59:47+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "CNBC Markets & World",
+          "url": "https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html",
+          "title": "Dell earnings beat on AI strength, company authorizes $25 billion buyback",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 307,
+      "fingerprint": "e1deafc954a93dc217",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "美國將對全球貿易伙伴加徵新關稅",
+      "summary_zh": "美國擬對中國及歐盟等主要貿易夥伴加徵新關稅。",
+      "raw_title": "US preparing to unveil new tariffs on global trading partners",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "BBC Business報導美國擬加徵關稅對主要貿易夥伴",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-25T09:59:27+08:00",
+      "updated_at": "2026-11-25T09:59:27+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "BBC Business",
+          "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+          "title": "US preparing to unveil new tariffs on global trading partners",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 304,
+      "fingerprint": "3a9b32a12ce978c736",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "法國前總統薩科齊將面臨審判",
+      "summary_zh": "薩科齊與妻子布魯尼將接受審判，為其任內首度入獄案。",
+      "raw_title": "French ex-President Sarkozy and wife Carla Bruni to face trial",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "BBC報導確認為已發生司法案件",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-25T09:59:21+08:00",
+      "updated_at": "2026-11-25T09:59:21+08:00",
+      "evidence_tags": [
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&at_campaign=rss",
+          "title": "French ex-President Sarkozy and wife Carla Bruni to face trial",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 295,
+      "fingerprint": "6c98abf0ad02e55a8d",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "Google 新增隱私設定可控對話訓練",
+      "summary_zh": "Google 推出新設定讓用戶可保留對話紀錄並獨立控制AI訓練。",
+      "raw_title": "New Gemini setting lets you keep chat history, but turn off AI training [U]",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方推出具體AI隱私設定",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-25T09:45:10+08:00",
+      "updated_at": "2026-11-25T09:45:10+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態"
+      ],
+      "sources": [
+        {
+          "name": "9to5Google",
+          "url": "https://9to5google.com/2026/11/24/gemini-history-ai-training/",
+          "title": "New Gemini setting lets you keep chat history, but turn off AI training [U]",
+          "authority": "insider_media"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "fingerprint": "967322b4abaf811db7",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "Tidal將於12月9日禁用AI音樂",
+      "summary_zh": "Tidal宣布將於12月9日起移除全數AI生成音樂，近43%近期上傳曲目被標記為AI生成。",
+      "raw_title": "Tidal Bans AI Music, While Apple Music Sticks to Labels",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "明確宣布具體日期與比例數據",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-25T09:45:00+08:00",
+      "updated_at": "2026-11-25T09:45:00+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態"
+      ],
+      "sources": [
+        {
+          "name": "MacRumors",
+          "url": "https://www.macrumors.com/2026/11/24/tidal-ai-music-ban/",
+          "title": "Tidal Bans AI Music, While Apple Music Sticks to Labels",
+          "authority": "insider_media"
+        }
+      ]
+    },
+    {
+      "id": 279,
+      "fingerprint": "5e34d073e78310d040",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "胡塞武装襲擊沙特首都高樓 11人受傷",
+      "summary_zh": "胡塞勢力襲擊利雅得高樓，11人受傷，雙方持續交火。",
+      "raw_title": "Houthi Attack on Skyscraper in Saudi Capital Wounds 11, Officials Say",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方確認傷亡與地點，屬明確衝突事件",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-25T09:44:42+08:00",
+      "updated_at": "2026-11-25T09:44:42+08:00",
+      "evidence_tags": [
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "NYT World",
+          "url": "https://www.nytimes.com/2026/11/24/world/middleeast/saudi-skyscraper-houthi-strike.html",
+          "title": "Houthi Attack on Skyscraper in Saudi Capital Wounds 11, Officials Say",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 278,
+      "fingerprint": "d30fa03476fa2af65b",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "伊拉克首相欲強化對庫爾德地區控制",
+      "summary_zh": "阿里·阿齊迪擊敗伊朗支持的民兵後，試圖掌控庫爾德邊境 crossings 與油資源。",
+      "raw_title": "Iraq’s Prime Minister Aims to Wrest More Power from Kurdistan Region",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "首相動向涉邊境與資源爭議",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-25T09:44:40+08:00",
+      "updated_at": "2026-11-25T09:44:40+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "NYT World",
+          "url": "https://www.nytimes.com/2026/11/24/world/middleeast/iraq-prime-minister-kurdistan-control.html",
+          "title": "Iraq’s Prime Minister Aims to Wrest More Power from Kurdistan Region",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 277,
+      "fingerprint": "417291c23eb39423f6",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "古巴壽命預期首降 因經濟危機",
+      "summary_zh": "世界衛生組織表示古巴壽命預期從2020年78.8年降至2025年74.4年，為1950年以來首降。",
+      "raw_title": "Life expectancy in Cuba falls for first time since 1950 amid economic crisis",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "WHO官方確認數據，具體年份與數字明確",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-25T09:44:38+08:00",
+      "updated_at": "2026-11-25T09:44:38+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "The Guardian World",
+          "url": "https://www.theguardian.com/world/2026/nov/24/cuba-life-expectancy-decline",
+          "title": "Life expectancy in Cuba falls for first time since 1950 amid economic crisis",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 276,
+      "fingerprint": "fc3867286279d37d54",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "購物商場遭武装分子劫持 十五人獲釋",
+      "summary_zh": "哥倫比亞卡塔赫納超市發生人質事件，共15人被劫持，總統稱為普通罪犯所為。",
+      "raw_title": "Armed men hold hostages at supermarket in top Colombian tourist destination",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "總統證實人質事件屬普通罪犯失控行為",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-25T09:44:35+08:00",
+      "updated_at": "2026-11-25T09:44:35+08:00",
+      "evidence_tags": [
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "The Guardian World",
+          "url": "https://www.theguardian.com/world/2026/nov/24/cartagena-colombia-hostages-supermarket",
+          "title": "Armed men hold hostages at supermarket in top Colombian tourist destination",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 259,
+      "fingerprint": "601b7fd180e487f894",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "傳川普施壓英偉達請回黃仁勳",
+      "summary_zh": "傳聞稱川普施壓英偉達將創辦人黃仁勳復職，董事會一致通過決議。",
+      "raw_title": "Trump pressured Nvidia to bring Jensen back, called into board meeting to push reinstatement, reports claim",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "傳聞提及川普施壓，但無證據支持",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:57:56+08:00",
+      "updated_at": "2026-11-24T21:57:56+08:00",
+      "evidence_tags": [],
+      "sources": [
+        {
+          "name": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/tech-industry/policy/trump-pressured-nvidia-to-bring-jensen-back-called-into-board-meeting-to-push-reinstatement-reports-claim-president-concerned-over-falling-stock-prices-with-huangs-return-reversing-slide",
+          "title": "Trump pressured Nvidia to bring Jensen back, called into board meeting to push reinstatement, reports claim",
+          "authority": "specialist_media"
+        }
+      ]
+    },
+    {
+      "id": 257,
+      "fingerprint": "7fa4eee5d1fbdeb834",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "中國調查上海黨領袖陳進寧",
+      "summary_zh": "陳進寧在突然失勢前被視為未來國家領導人，現遭中國調查。",
+      "raw_title": "China Investigates Chen Jining, Shanghai’s Party Leader, as Xi’s Purges Expand",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方調查具體人物且涉高層政治變動",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:57:52+08:00",
+      "updated_at": "2026-11-24T21:57:52+08:00",
+      "evidence_tags": [
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "NYT World",
+          "url": "https://www.nytimes.com/2026/11/24/world/asia/shanghai-party-leader-investigation-china-xi.html",
+          "title": "China Investigates Chen Jining, Shanghai’s Party Leader, as Xi’s Purges Expand",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 244,
+      "fingerprint": "2117eb8fd0a7debbb7",
+      "kind": "major",
+      "domain": "半導體・晶片",
+      "title_zh": "Team Group推兩款工業級嵌入式固態硬碟",
+      "summary_zh": "推出S845-25W與S845-M80W兩款工業用固態硬碟，強調韌性與數據安全。",
+      "raw_title": "(PR) Team Group Industrial Enhances S845 Embedded Storage Solutions",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方公告具體型號與應用領域",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:43:20+08:00",
+      "updated_at": "2026-11-24T21:43:20+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態"
+      ],
+      "sources": [
+        {
+          "name": "TechPowerUp",
+          "url": "https://www.techpowerup.com/355154/team-group-industrial-enhances-s845-embedded-storage-solutions",
+          "title": "(PR) Team Group Industrial Enhances S845 Embedded Storage Solutions",
+          "authority": "specialist_media"
+        }
+      ]
+    },
+    {
+      "id": 236,
+      "fingerprint": "01cea1b9726b815ea5",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "COP31破裂打破全球氣候共識假象",
+      "summary_zh": "進步國家抗議石油國阻撓，終致UN氣候峰會協議崩潰。",
+      "raw_title": "COP31 collapse has shattered the pretence of a global climate consensus",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "UN峰會協議明確崩潰，有具體政治對立",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:43:05+08:00",
+      "updated_at": "2026-11-24T21:43:05+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "New Scientist",
+          "url": "https://www.newscientist.com/article/2600331-cop31-collapse-has-shattered-the-pretense-of-a-global-climate-consensus/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+          "title": "COP31 collapse has shattered the pretence of a global climate consensus",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 234,
+      "fingerprint": "c3c09c04ec577d333a",
+      "kind": "major",
+      "domain": "科學・能源",
+      "title_zh": "潛艦發現馬里亞納海溝最深爆發性火山活動",
+      "summary_zh": "深海機器人於6100公尺處發現爆炸性火山活動，打破原有地質預期。",
+      "raw_title": "Submarine finds world’s deepest explosive volcanic activity in Mariana trench",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "深海發現爆炸性火山活動，屬科學突破",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:43:01+08:00",
+      "updated_at": "2026-11-24T21:43:01+08:00",
+      "evidence_tags": [
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "New Scientist",
+          "url": "https://www.newscientist.com/article/2599436-submarine-finds-worlds-deepest-explosive-volcanic-activity-in-mariana-trench/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+          "title": "Submarine finds world’s deepest explosive volcanic activity in Mariana trench",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 233,
+      "fingerprint": "291c07527df964ab53",
+      "kind": "major",
+      "domain": "科學・能源",
+      "title_zh": "直連手機技術或可繞過政府網路封鎖",
+      "summary_zh": "直接傳輸至手機的技術可能協助避開網絡管制，但受法律與技術限制尚未實行。",
+      "raw_title": "The technology that could make government internet blackouts impossible",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "獨立權威媒體報導技術潛力與限制",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:42:59+08:00",
+      "updated_at": "2026-11-24T21:42:59+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "New Scientist",
+          "url": "https://www.newscientist.com/article/2600040-the-technology-that-could-make-government-internet-blackouts-impossible/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+          "title": "The technology that could make government internet blackouts impossible",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 228,
+      "fingerprint": "0d47ac9230301b92d4",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "Uber、Nuro、Lucid啟動全自動無人駕駛試駛",
+      "summary_zh": "Uber、Nuro與Lucid在舊金山灣區啟動全自動無人駕駛公共路測。",
+      "raw_title": "Uber, Nuro, and Lucid kick off fully driverless robotaxi testing",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方合作啟動，具體地點與參與方明確",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:42:50+08:00",
+      "updated_at": "2026-11-24T21:42:50+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/transportation/1040676/uber-nuro-lucid-driverless-robotaxi-testing-bay-area",
+          "title": "Uber, Nuro, and Lucid kick off fully driverless robotaxi testing",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 227,
+      "fingerprint": "c4abee39b6195f5baf",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "AI資料平台Zipher獲5300萬美元融資",
+      "summary_zh": "AI資料處理平台Zipher獲5300萬美元Seed與A輪融資。",
+      "raw_title": "Zipher, which uses AI agents to handle data workload execution and resource allocation, raised $53M across seed and Series A from TLV Partners and others (Duncan Riley/SiliconANGLE)",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方宣布獲資深融資，具體金額與輪次明確",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:42:47+08:00",
+      "updated_at": "2026-11-24T21:42:47+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "TechMeme",
+          "url": "https://www.techmeme.com/261124/p19#a261124p19",
+          "title": "Zipher, which uses AI agents to handle data workload execution and resource allocation, raised $53M across seed and Series A from TLV Partners and others (Duncan Riley/SiliconANGLE)",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 225,
+      "fingerprint": "0fd4adc2bf34292175",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "80% AI應用自動化手動任務",
+      "summary_zh": "80%的100個AI建造應用自動化手動任務，價值來自擴展與加速輸出。",
+      "raw_title": "Study: most AI deployments derive value by expanding and accelerating output rather than reducing costs, with 80% of 100 AI-built apps automating manual tasks (Anthropic)",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方研究明確指出80%AI應用自動化手動任務",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:29:09+08:00",
+      "updated_at": "2026-11-24T21:29:09+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "TechMeme",
+          "url": "https://www.techmeme.com/261124/p12#a261124p12",
+          "title": "Study: most AI deployments derive value by expanding and accelerating output rather than reducing costs, with 80% of 100 AI-built apps automating manual tasks (Anthropic)",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 224,
+      "fingerprint": "545194d2fd6d045564",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "AI實驗室迎戰國情間諜威脅",
+      "summary_zh": "頂尖AI機構與科技巨頭加強防禦，招募CIA人才並限制員工移動。",
+      "raw_title": "How frontier AI labs and Big Tech companies are combatting rising state-sponsored espionage threats: recruiting CIA talent, limiting staff movements, and more (Financial Times)",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "報導提及CIA招募與員工管控，屬重大安全措施",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:29:07+08:00",
+      "updated_at": "2026-11-24T21:29:07+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "TechMeme",
+          "url": "https://www.techmeme.com/261124/p13#a261124p13",
+          "title": "How frontier AI labs and Big Tech companies are combatting rising state-sponsored espionage threats: recruiting CIA talent, limiting staff movements, and more (Financial Times)",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "fingerprint": "b40a6479558e5d481d",
+      "kind": "major",
+      "domain": "半導體・晶片",
+      "title_zh": "兩組未加密資料庫洩露35億筆個人資料",
+      "summary_zh": "兩組未保護資料庫洩露35億筆資料，其中16.4億屬中國公民。",
+      "raw_title": "Researchers find two separate, unsecured databases exposing 3.5B+ combined records, login credentials, and personal documents; 1.64B relate to Chinese citizens (Wired)",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方媒體揭露重大資料洩漏事件",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:29:05+08:00",
+      "updated_at": "2026-11-24T21:29:05+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "TechMeme",
+          "url": "https://www.techmeme.com/261124/p14#a261124p14",
+          "title": "Researchers find two separate, unsecured databases exposing 3.5B+ combined records, login credentials, and personal documents; 1.64B relate to Chinese citizens (Wired)",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 222,
+      "fingerprint": "0df24068195e0bb117",
+      "kind": "major",
+      "domain": "半導體・晶片",
+      "title_zh": "歐洲火箭發射36顆Amazon衛星",
+      "summary_zh": "Arianespace使用Ariane 6火箭發射36顆Amazon Leo衛星，為第四次Amazon任務及火箭第十次飛行。",
+      "raw_title": "Arianespace's Ariane 6 rocket launches 36 Amazon Leo satellites from ESA's spaceport in French Guiana, its fourth Amazon mission and the rocket's 10th flight (Summer Maxwell/Bloomberg)",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方確認發射任務與型號數字",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:29:03+08:00",
+      "updated_at": "2026-11-24T21:29:03+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "TechMeme",
+          "url": "https://www.techmeme.com/261124/p15#a261124p15",
+          "title": "Arianespace's Ariane 6 rocket launches 36 Amazon Leo satellites from ESA's spaceport in French Guiana, its fourth Amazon mission and the rocket's 10th flight (Summer Maxwell/Bloomberg)",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 219,
+      "fingerprint": "78c57823f396e06cd7",
+      "kind": "major",
+      "domain": "科學・能源",
+      "title_zh": "更年期加速腦部老化 激素治療或可保護",
+      "summary_zh": "研究顯示更年期可能加速腦部老化，並影響阿茲海默症進展。",
+      "raw_title": "Menopause can speed up brain ageing — hormone therapy might protect it",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "Nature正式發表揭示更年期與腦老化關聯",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:28:56+08:00",
+      "updated_at": "2026-11-24T21:28:56+08:00",
+      "evidence_tags": [
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "Nature",
+          "url": "https://www.nature.com/articles/d41586-026-03667-y",
+          "title": "Menopause can speed up brain ageing — hormone therapy might protect it",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 216,
+      "fingerprint": "666fb5fa56684f9a4a",
+      "kind": "major",
+      "domain": "國際政經",
+      "title_zh": "巴基斯坦太空人將成為中國空間站首位外國訪客",
+      "summary_zh": "巴基斯坦宇航員穆罕默德·宰沙安·阿里將於本周搭乘中國太空船抵達天宮空間站。",
+      "raw_title": "Pakistani astronaut to become first foreign visitor to China’s space station",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "Nature正式報導具體訪客與任務細節",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:28:50+08:00",
+      "updated_at": "2026-11-24T21:28:50+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態",
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "Nature",
+          "url": "https://www.nature.com/articles/d41586-026-03829-y",
+          "title": "Pakistani astronaut to become first foreign visitor to China’s space station",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 203,
+      "fingerprint": "0319123faeeb884743",
+      "kind": "major",
+      "domain": "科學・能源",
+      "title_zh": "20年星系調查發現宇宙組成有缺失",
+      "summary_zh": "長達20年的星系調查顯示數據與主流宇宙學理論不符，暗示可能有未知成分存在。",
+      "raw_title": "What Makes Up the Cosmos? A 20-Year Survey Hints That Something Is Missing.",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "官方調查結果違背主流理論，具突破性",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:28:25+08:00",
+      "updated_at": "2026-11-24T21:28:25+08:00",
+      "evidence_tags": [
+        "🏛️ 一線權威外媒"
+      ],
+      "sources": [
+        {
+          "name": "Quanta Magazine",
+          "url": "https://www.quantamagazine.org/what-makes-up-the-cosmos-a-20-year-survey-hints-that-something-is-missing-20261116/",
+          "title": "What Makes Up the Cosmos? A 20-Year Survey Hints That Something Is Missing.",
+          "authority": "tier1"
+        }
+      ]
+    },
+    {
+      "id": 183,
+      "fingerprint": "afa8fe395c8edf8c4a",
+      "kind": "major",
+      "domain": "AI・科技巨頭",
+      "title_zh": "Meta在英國推出Muse個人AI助理",
+      "summary_zh": "Meta將Muse個人AI助理推廣至英國用戶，支持透過WhatsApp或專用App互動。",
+      "raw_title": "Meta's Muse Personal AI Agent Launches in the UK",
+      "impact_level": 7,
+      "credibility_pct": 0,
+      "rumor_tier": "",
+      "upgraded": false,
+      "reasoning_zh": "英國正式推出已於美國先發的Muse AI助理",
+      "source_count": 1,
+      "notified": false,
+      "is_sandbox": false,
+      "created_at": "2026-11-24T21:26:00+08:00",
+      "updated_at": "2026-11-24T21:26:00+08:00",
+      "evidence_tags": [
+        "📌 重要產業/政策動態"
+      ],
+      "sources": [
+        {
+          "name": "MacRumors",
+          "url": "https://www.macrumors.com/2026/11/24/metas-muse-personal-ai-agent-launches-in-the-uk/",
+          "title": "Meta's Muse Personal AI Agent Launches in the UK",
+          "authority": "insider_media"
+        }
+      ]
+    }
+  ],
+  "rumors": {
+    "likely": [
+      {
+        "fingerprint": "7ad2375de3b036c9b6",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "OpenAI 訴 Apple 被盜商密",
+        "summary_zh": "OpenAI 指控 Apple 員工帶走機密並威脅供應商，雙方法律戰持續。",
+        "raw_title": "OpenAI countersues Apple for stealing trade secrets",
+        "impact_level": 0,
+        "credibility_pct": 94,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "evidence_tags": [
+          "🔁 雙來源交叉印證",
+          "🏛️ 權威外媒獨家引述",
+          "🔍 含具體規格/時程細節"
+        ],
+        "reasoning_zh": "Financial Times 报导具一線外媒證據，內容具體可驗證",
+        "sources": [
+          {
+            "name": "CNBC Markets & World",
+            "url": "https://www.cnbc.com/2026/11/27/openai-countersues-apple-for-stealing-trade-secrets-ft-reports.html",
+            "title": "OpenAI countersues Apple for stealing trade secrets",
+            "authority": "tier1"
+          },
+          {
+            "name": "TechMeme",
+            "url": "https://www.techmeme.com/261127/p12#a261127p12",
+            "title": "OpenAI countersues Apple for allegedly stealing trade secrets via a staffer who returned to Apple and \"coercing and threatening\" suppliers that work with both (Financial Times)",
+            "authority": "tier1"
+          }
+        ],
+        "source_count": 2,
+        "notified": false,
+        "created_at": "2026-11-28T01:41:03+00:00",
+        "updated_at": "2026-11-28T01:41:03+00:00"
+      },
+      {
+        "fingerprint": "ee0d71cc84ecbbaf55",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "OpenAI修正GPT-6.2計費錯誤致使用上限提前",
+        "summary_zh": "OpenAI承認GPT-6.2模型計費錯誤，用戶將更快觸發使用上限。",
+        "raw_title": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discounted usage; Astra users will now hit their limits 40% faster (Graham Barlow/TechRadar)",
+        "impact_level": 0,
+        "credibility_pct": 94,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "evidence_tags": [
+          "🔁 雙來源交叉印證",
+          "🏛️ 權威外媒獨家引述",
+          "🔍 含具體規格/時程細節"
+        ],
+        "reasoning_zh": "官方公告修正計費邏輯，具可驗證性",
+        "sources": [
+          {
+            "name": "TechMeme",
+            "url": "https://www.techmeme.com/261126/p16#a261126p16",
+            "title": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discounted usage; Astra users will now hit their limits 40% faster (Graham Barlow/TechRadar)",
+            "authority": "tier1"
+          },
+          {
+            "name": "Hacker News Frontpage",
+            "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+            "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+            "authority": "community_signal"
+          }
+        ],
+        "source_count": 2,
+        "notified": false,
+        "created_at": "2026-11-26T15:44:08+00:00",
+        "updated_at": "2026-11-26T15:44:08+00:00"
+      },
+      {
+        "fingerprint": "fa09d9c8092a884fc2",
+        "kind": "rumor",
+        "domain": "科學・能源",
+        "title_zh": "AI輔助證明黎曼猜想或具備突破性",
+        "summary_zh": "新AI證明被視為穩固，但其實際意義仍不明確。",
+        "raw_title": "What's going on with the Riemann hypothesis?",
+        "impact_level": 0,
+        "credibility_pct": 86,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "evidence_tags": [
+          "🔁 雙來源交叉印證",
+          "🏛️ 權威外媒獨家引述"
+        ],
+        "reasoning_zh": "AI證明黎曼猜想未官宣，屬科學界風聲",
+        "sources": [
+          {
+            "name": "Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
+            "title": "What's going on with the Riemann hypothesis?",
+            "authority": "tier1"
+          },
+          {
+            "name": "Hacker News 核彈高分榜 (>800pts)",
+            "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+            "title": "Lean verification of the Riemann Hypothesis",
+            "authority": "tier1"
+          }
+        ],
+        "source_count": 2,
+        "notified": false,
+        "created_at": "2026-11-25T04:30:10+00:00",
+        "updated_at": "2026-11-25T04:30:10+00:00"
+      },
+      {
+        "id": 2,
+        "fingerprint": "bb4306227fd019d045",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "特朗普推動黃仁勳復出反遭董事會拒絕",
+        "summary_zh": "黃仁勳被董事會拒絕回任，但特朗普施壓被視為實際override。",
+        "raw_title": "With Jensen Huang’s Return as C.E.O., Trump Effectively Overrode Nvidia’s Board",
+        "impact_level": 0,
+        "credibility_pct": 86,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "reasoning_zh": "董事會拒絕回任，但特朗普施壓被視為實際override",
+        "source_count": 2,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T11:11:19+08:00",
+        "updated_at": "2026-11-24T11:11:19+08:00",
+        "evidence_tags": [
+          "🔁 雙來源交叉印證",
+          "🏛️ 權威外媒獨家引述"
+        ],
+        "sources": [
+          {
+            "name": "NYT Technology",
+            "url": "https://www.nytimes.com/2026/11/23/technology/jensen-huang-nvidia-board-trump.html",
+            "title": "With Jensen Huang’s Return as C.E.O., Trump Effectively Overrode Nvidia’s Board",
+            "authority": "tier1"
+          },
+          {
+            "name": "CNBC Tech",
+            "url": "https://www.cnbc.com/2026/11/23/jim-cramer-nvidia-jensen-huang-ceo-return.html",
+            "title": "Jim Cramer sees more upside for Nvidia stock with Jensen Huang back as CEO",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "fingerprint": "639158fff50a598fb3",
+        "kind": "rumor",
+        "domain": "科學・能源",
+        "title_zh": "矩陣乘法指數為九分之四的論文引發熱議",
+        "summary_zh": "提出關於矩陣乘法複雜度的新理論，尚未經學界驗證。",
+        "raw_title": "The matrix multiplication exponent is nine fourths [pdf]",
+        "impact_level": 0,
+        "credibility_pct": 84,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "evidence_tags": [
+          "📄 官方殘留/認證/跑分硬證據",
+          "🔍 含具體規格/時程細節"
+        ],
+        "reasoning_zh": "PDF 論文流出，屬數學理論風聲，未經正式發表",
+        "sources": [
+          {
+            "name": "Hacker News 核彈高分榜 (>800pts)",
+            "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+            "title": "The matrix multiplication exponent is nine fourths [pdf]",
+            "authority": "tier1"
+          }
+        ],
+        "source_count": 1,
+        "notified": false,
+        "created_at": "2026-11-27T08:44:15+00:00",
+        "updated_at": "2026-11-27T08:44:15+00:00"
+      },
+      {
+        "id": 274,
+        "fingerprint": "5f7607002139cac124",
+        "kind": "rumor",
+        "domain": "國際政經",
+        "title_zh": "349名俄羅斯士兵死於馬里內戰 leaks",
+        "summary_zh": "洩露資料顯示俄軍在馬里三年內造成349人死亡。",
+        "raw_title": "More than 300 Russians killed as Moscow props up Mali’s junta, leaked data reveals",
+        "impact_level": 0,
+        "credibility_pct": 84,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "reasoning_zh": "資料含具體死亡數字與時間軸",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-25T09:44:32+08:00",
+        "updated_at": "2026-11-25T09:44:32+08:00",
+        "evidence_tags": [
+          "📄 官方殘留/認證/跑分硬證據",
+          "🔍 含具體規格/時程細節"
+        ],
+        "sources": [
+          {
+            "name": "The Guardian World",
+            "url": "https://www.theguardian.com/world/2026/nov/24/russian-fighters-killed-in-mali-africa-leaked-data",
+            "title": "More than 300 Russians killed as Moscow props up Mali’s junta, leaked data reveals",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "fingerprint": "a92a40bd32681151a4",
+        "kind": "rumor",
+        "domain": "Apple・供應鏈",
+        "title_zh": "韓國調查蘋果iPhone 16智慧廣告內容誇大",
+        "summary_zh": "韓國公平交易委員會正式對蘋果廣告提出訴訟，指其宣傳內容可能誤導。",
+        "raw_title": "South Korea proceeds with case over allegedly misleading Apple Intelligence ads",
+        "impact_level": 0,
+        "credibility_pct": 82,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "evidence_tags": [
+          "🏛️ 權威外媒獨家引述",
+          "🔍 含具體規格/時程細節"
+        ],
+        "reasoning_zh": "韓國當局已開案調查，屬官方行動，非已官宣產品或政策",
+        "sources": [
+          {
+            "name": "9to5Mac",
+            "url": "https://9to5mac.com/2026/11/26/south-korea-proceeds-with-case-over-allegedly-misleading-apple-intelligence-ads/",
+            "title": "South Korea proceeds with case over allegedly misleading Apple Intelligence ads",
+            "authority": "insider_media"
+          }
+        ],
+        "source_count": 1,
+        "notified": false,
+        "created_at": "2026-11-27T08:44:15+00:00",
+        "updated_at": "2026-11-27T08:44:15+00:00"
+      },
+      {
+        "fingerprint": "b962eb9be69cca8754",
+        "kind": "rumor",
+        "domain": "國際政經",
+        "title_zh": "2028年Anthropic能源將來自天然氣與煤炭",
+        "summary_zh": "預測 Anthropic 2028 年能源結構，未經官方證實。",
+        "raw_title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+        "impact_level": 0,
+        "credibility_pct": 74,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "evidence_tags": [
+          "🏛️ 權威外媒獨家引述"
+        ],
+        "reasoning_zh": "能源來源比例為未官宣之風聲，具供應鏈推測性",
+        "sources": [
+          {
+            "name": "Hacker News 核彈高分榜 (>800pts)",
+            "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+            "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+            "authority": "tier1"
+          }
+        ],
+        "source_count": 1,
+        "notified": false,
+        "created_at": "2026-11-27T08:44:15+00:00",
+        "updated_at": "2026-11-27T08:44:15+00:00"
+      },
+      {
+        "fingerprint": "21062fd8bcdf6d3b79",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "Apple 仍開發可能售價 5000 美元的大型摺疊 iPad",
+        "summary_zh": "據 Bloomberg 報導，Apple 內部仍推動代號為 Project J312 的大型摺疊 iPad 開發，但尚未確認是否會推出。",
+        "raw_title": "Apple Still Working on Giant Foldable iPad That Could Cost $5,000",
+        "impact_level": 0,
+        "credibility_pct": 74,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "evidence_tags": [
+          "🏛️ 權威外媒獨家引述"
+        ],
+        "reasoning_zh": "Bloomberg 報導未證實產品正式發布，屬未官宣風聲",
+        "sources": [
+          {
+            "name": "MacRumors",
+            "url": "https://www.macrumors.com/2026/11/26/apple-still-working-on-giant-foldable-ipad/",
+            "title": "Apple Still Working on Giant Foldable iPad That Could Cost $5,000",
+            "authority": "insider_media"
+          }
+        ],
+        "source_count": 1,
+        "notified": false,
+        "created_at": "2026-11-27T00:15:59+00:00",
+        "updated_at": "2026-11-27T00:15:59+00:00"
+      },
+      {
+        "fingerprint": "913896d84d6af5db65",
+        "kind": "rumor",
+        "domain": "半導體・晶片",
+        "title_zh": "OLED MacBook Air 可能於 2027 或 2028 上市",
+        "summary_zh": "Bloomberg 報導 Apple 可能於 2027 或 2028 推出設計重構的 MacBook Air，搭配 M6 芯片。",
+        "raw_title": "Redesigned OLED MacBook Air Could Launch in 2027 or 2028",
+        "impact_level": 0,
+        "credibility_pct": 74,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "evidence_tags": [
+          "🏛️ 權威外媒獨家引述"
+        ],
+        "reasoning_zh": "Bloomberg 報導為業界風聲，未經官方確認",
+        "sources": [
+          {
+            "name": "MacRumors",
+            "url": "https://www.macrumors.com/2026/11/25/oled-macbook-air-2027-2028/",
+            "title": "Redesigned OLED MacBook Air Could Launch in 2027 or 2028",
+            "authority": "insider_media"
+          }
+        ],
+        "source_count": 1,
+        "notified": false,
+        "created_at": "2026-11-26T05:25:48+00:00",
+        "updated_at": "2026-11-26T05:25:48+00:00"
+      },
+      {
+        "id": 283,
+        "fingerprint": "f6a744acda96db08a3",
+        "kind": "rumor",
+        "domain": "半導體・晶片",
+        "title_zh": "調查指NVIDIA芯片被違規轉移至中國",
+        "summary_zh": "司法部調查指NVIDIA高階晶片被其他公司違規轉移至中國。",
+        "raw_title": "Blanche Downplays Questions Over Nvidia as Investigators Examine Company’s Customers",
+        "impact_level": 0,
+        "credibility_pct": 74,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "reasoning_zh": "調查提及違規轉移，但無具體證據或時程",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-25T09:44:50+08:00",
+        "updated_at": "2026-11-25T09:44:50+08:00",
+        "evidence_tags": [
+          "🏛️ 權威外媒獨家引述"
+        ],
+        "sources": [
+          {
+            "name": "NYT Technology",
+            "url": "https://www.nytimes.com/2026/11/24/us/politics/nvidia-justice-department-todd-blanche.html",
+            "title": "Blanche Downplays Questions Over Nvidia as Investigators Examine Company’s Customers",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "fingerprint": "bf968cf588c835f90e",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "黃仁勳向員工道歉稱正接受心理治療",
+        "summary_zh": "黃仁勳回公司後承認違反行為規範並承認錯誤。",
+        "raw_title": "Jensen Huang Apologizes to Nvidia Employees, Says He Is in Therapy",
+        "impact_level": 0,
+        "credibility_pct": 74,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "evidence_tags": [
+          "🏛️ 權威外媒獨家引述"
+        ],
+        "reasoning_zh": "BBC與NYT報導屬媒體引述，未證實具體行為或治療細節",
+        "sources": [
+          {
+            "name": "NYT Technology",
+            "url": "https://www.nytimes.com/2026/11/24/technology/jensen-huang-apology-nvidia-ceo.html",
+            "title": "Jensen Huang Apologizes to Nvidia Employees, Says He Is in Therapy",
+            "authority": "tier1"
+          }
+        ],
+        "source_count": 1,
+        "notified": false,
+        "created_at": "2026-11-25T05:05:15+00:00",
+        "updated_at": "2026-11-25T05:05:15+00:00"
+      },
+      {
+        "id": 132,
+        "fingerprint": "1531cb6cd441438272",
+        "kind": "rumor",
+        "domain": "半導體・晶片",
+        "title_zh": "新加坡政府拒當美晶片禁令漏洞",
+        "summary_zh": "新加坡總理表示不願利用當地繞過美國晶片出口管制，並調查Megaspeed購入Nvidia晶片一事。",
+        "raw_title": "PM Lawrence Wong says he doesn't want Singapore used to circumvent US chip export controls, as authorities probe Megaspeed's purchases of Nvidia chips (Philip Heijmans/Bloomberg)",
+        "impact_level": 0,
+        "credibility_pct": 74,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "reasoning_zh": "PM明確反對繞道禁令，調查特定購案",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T13:12:15+08:00",
+        "updated_at": "2026-11-24T13:12:15+08:00",
+        "evidence_tags": [
+          "🏛️ 權威外媒獨家引述"
+        ],
+        "sources": [
+          {
+            "name": "TechMeme",
+            "url": "https://www.techmeme.com/261124/p1#a261124p1",
+            "title": "PM Lawrence Wong says he doesn't want Singapore used to circumvent US chip export controls, as authorities probe Megaspeed's purchases of Nvidia chips (Philip Heijmans/Bloomberg)",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 104,
+        "fingerprint": "533bf80f1030947f1e",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "前OpenAI工程師被控竊錄會議內容涉機密",
+        "summary_zh": "前OpenAI工程師被控竊錄多份會議錄音，內含可能涉貿密資料。",
+        "raw_title": "US prosecutors say the ex-OpenAI engineer charged with bugging an exec conference room had dozens of OpenAI meeting recordings, many on possible trade secrets (Madlin Mekelburg/Bloomberg)",
+        "impact_level": 0,
+        "credibility_pct": 74,
+        "rumor_tier": "likely",
+        "upgraded": false,
+        "reasoning_zh": "外媒引述檢方說法，無具體證據佐證",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T12:20:15+08:00",
+        "updated_at": "2026-11-24T12:20:15+08:00",
+        "evidence_tags": [
+          "🏛️ 權威外媒獨家引述"
+        ],
+        "sources": [
+          {
+            "name": "TechMeme",
+            "url": "https://www.techmeme.com/261123/p49#a261123p49",
+            "title": "US prosecutors say the ex-OpenAI engineer charged with bugging an exec conference room had dozens of OpenAI meeting recordings, many on possible trade secrets (Madlin Mekelburg/Bloomberg)",
+            "authority": "tier1"
+          }
+        ]
+      }
+    ],
+    "watch": [
+      {
+        "fingerprint": "071eef7b9b6e2e5895",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "iPhone 18與iPhone Air 2將於2027年春季推出",
+        "summary_zh": "MacRumors節目提及iPhone 18與iPhone 18e預計在2027年2月或3月發售。",
+        "raw_title": "The MacRumors Show: iPhone Air 2 and iPhone 18 Are Coming",
+        "impact_level": 0,
+        "credibility_pct": 64,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "evidence_tags": [
+          "🏛️ 權威外媒獨家引述",
+          "🌫️ 描述模糊空泛"
+        ],
+        "reasoning_zh": "未經官方確認，僅為媒體節目推測，資訊模糊",
+        "sources": [
+          {
+            "name": "MacRumors",
+            "url": "https://www.macrumors.com/2026/11/27/the-macrumors-show-iphone-air-2-and-18/",
+            "title": "The MacRumors Show: iPhone Air 2 and iPhone 18 Are Coming",
+            "authority": "insider_media"
+          }
+        ],
+        "source_count": 1,
+        "notified": false,
+        "created_at": "2026-11-27T18:39:52+00:00",
+        "updated_at": "2026-11-27T18:39:52+00:00"
+      },
+      {
+        "fingerprint": "48495f87a52fdf346e",
+        "kind": "rumor",
+        "domain": "半導體・晶片",
+        "title_zh": "Intel Razor Lake-AX 搭載32個Xe3P核心，性能媲美NVIDIA RTX 5070 Ti筆電",
+        "summary_zh": "Intel Razor Lake-AX SoC被傳將具備類似RTX 5070 Ti的GPU性能與192GB記憶體。",
+        "raw_title": "Intel Razor Lake-AX Could Feature GPU Performance Comparable to RTX 5070 Ti Laptop With Up To 32 Xe3P Cores & A 192 GB Memory Capacity",
+        "impact_level": 0,
+        "credibility_pct": 60,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "evidence_tags": [
+          "🔁 雙來源交叉印證",
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "reasoning_zh": "供應鏈爆料未經官方證實，屬中等具體度風聲",
+        "sources": [
+          {
+            "name": "Wccftech",
+            "url": "https://wccftech.com/intel-razor-lake-ax-gpu-performance-comparable-to-rtx-5070-ti/",
+            "title": "Intel Razor Lake-AX Could Feature GPU Performance Comparable to RTX 5070 Ti Laptop With Up To 32 Xe3P Cores & A 192 GB Memory Capacity",
+            "authority": "leak_aggregator"
+          },
+          {
+            "name": "TechPowerUp",
+            "url": "https://www.techpowerup.com/355272/intel-razor-lake-ax-split-into-mop-and-mob-lines-igpu-tipped-at-rtx-5070-ti-laptop-level",
+            "title": "Intel \"Razor Lake-AX\" Split Into MoP and MoB Lines, iGPU Tipped at RTX 5070 Ti Laptop Level",
+            "authority": "specialist_media"
+          }
+        ],
+        "source_count": 2,
+        "notified": false,
+        "created_at": "2026-11-27T18:39:52+00:00",
+        "updated_at": "2026-11-27T18:39:52+00:00"
+      },
+      {
+        "fingerprint": "8f4902066db41b7029",
+        "kind": "rumor",
+        "domain": "Apple・供應鏈",
+        "title_zh": "傳 iPhone 20 會採用陶瓷機身",
+        "summary_zh": "中國爆料者稱獲悉20週年版iPhone可能使用陶瓷元件，尚未證實。",
+        "raw_title": "Sketchy suggestion of ceramic iPhone 20 Pro",
+        "impact_level": 0,
+        "credibility_pct": 60,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "evidence_tags": [
+          "🔁 雙來源交叉印證",
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "reasoning_zh": "來自中國爆料者Weibo貼文，未見官方證據或正式公告",
+        "sources": [
+          {
+            "name": "9to5Mac",
+            "url": "https://9to5mac.com/2026/11/26/sketchy-suggestion-of-ceramic-iphone-20-pro/",
+            "title": "Sketchy suggestion of ceramic iPhone 20 Pro",
+            "authority": "insider_media"
+          },
+          {
+            "name": "MacRumors",
+            "url": "https://www.macrumors.com/2026/11/26/iphone-20-pro-ceramic-limited-edition-model/",
+            "title": "iPhone 20 Pro Could Feature Ceramic in Limited-Edition Model",
+            "authority": "insider_media"
+          }
+        ],
+        "source_count": 2,
+        "notified": false,
+        "created_at": "2026-11-26T15:44:08+00:00",
+        "updated_at": "2026-11-26T15:44:08+00:00"
+      },
+      {
+        "fingerprint": "d35e6f327c716731ed",
+        "kind": "rumor",
+        "domain": "國際政經",
+        "title_zh": "以色列法官建議撤銷對內塔尼亚胡的貪污案",
+        "summary_zh": "內塔尼亞胡面臨長期貪污指控，法官建議中止關鍵案件，尚未正式裁定。",
+        "raw_title": "Judges in Israel Suggest Dropping Key Corruption Case Against Netanyahu",
+        "impact_level": 0,
+        "credibility_pct": 60,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "evidence_tags": [
+          "🔁 雙來源交叉印證",
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "reasoning_zh": "法官建議中止案，非正式宣判，屬未證實的司法風聲",
+        "sources": [
+          {
+            "name": "NYT World",
+            "url": "https://www.nytimes.com/2026/11/25/world/middleeast/judges-israel-corruption-case-netanyahu.html",
+            "title": "Judges in Israel Suggest Dropping Key Corruption Case Against Netanyahu",
+            "authority": "tier1"
+          },
+          {
+            "name": "BBC World",
+            "url": "https://www.bbc.co.uk/news/articles/cxj05mv723r2o?at_medium=RSS&at_campaign=rss",
+            "title": "Israeli judges recommend dropping most serious charges against Netanyahu",
+            "authority": "tier1"
+          }
+        ],
+        "source_count": 2,
+        "notified": false,
+        "created_at": "2026-11-25T23:27:41+00:00",
+        "updated_at": "2026-11-25T23:27:41+00:00"
+      },
+      {
+        "fingerprint": "48bb9458f104a3d272",
+        "kind": "rumor",
+        "domain": "Apple・供應鏈",
+        "title_zh": "Apple 內部已測試 iPad 執行 macOS",
+        "summary_zh": "Gurman 報導 iPad 有內建 macOS，但目前無計畫推廣。",
+        "raw_title": "Apple Has iPads Running macOS Internally, Says Gurman",
+        "impact_level": 0,
+        "credibility_pct": 60,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "evidence_tags": [
+          "🔁 雙來源交叉印證",
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "reasoning_zh": "Gurman 作為知名供應鏈記者，提及內部測試但無正式宣布",
+        "sources": [
+          {
+            "name": "MacRumors",
+            "url": "https://www.macrumors.com/2026/11/25/apple-has-ipads-running-macos-internally/",
+            "title": "Apple Has iPads Running macOS Internally, Says Gurman",
+            "authority": "insider_media"
+          },
+          {
+            "name": "9to5Mac",
+            "url": "https://9to5mac.com/2026/11/25/apple-has-ipads-running-macos-already-but-dont-get-too-excited/",
+            "title": "Apple has iPads running macOS already, but don’t get too excited",
+            "authority": "insider_media"
+          }
+        ],
+        "source_count": 2,
+        "notified": false,
+        "created_at": "2026-11-25T14:54:30+00:00",
+        "updated_at": "2026-11-25T14:54:30+00:00"
+      },
+      {
+        "fingerprint": "2ab9ad552510f4624b",
+        "kind": "rumor",
+        "domain": "遊戲・娛樂爆料",
+        "title_zh": "CD Projekt RED與索尼簽署《巫師4》行銷合作",
+        "summary_zh": "據報導公司於2026年11月24日與索尼簽署新合作，涵蓋《巫師4》行銷與PS Plus。",
+        "raw_title": "CD Projekt RED Signs Sony Deal Covering The Witcher 4 Marketing and PlayStation Plus, After Partnering With Xbox on Cyberpunk 2077",
+        "impact_level": 0,
+        "credibility_pct": 60,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "evidence_tags": [
+          "🔁 雙來源交叉印證",
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "reasoning_zh": "未見正式公告，僅出自財報附錄，屬供應鏈風聲",
+        "sources": [
+          {
+            "name": "Wccftech",
+            "url": "https://wccftech.com/cd-projekt-red-sony-deal-the-witcher-4-marketing-playstation-plus/",
+            "title": "CD Projekt RED Signs Sony Deal Covering The Witcher 4 Marketing and PlayStation Plus, After Partnering With Xbox on Cyberpunk 2077",
+            "authority": "leak_aggregator"
+          },
+          {
+            "name": "TechPowerUp",
+            "url": "https://www.techpowerup.com/355179/cd-projekt-red-teams-up-with-sony-for-the-witcher-4-marketing-campaign",
+            "title": "CD Projekt RED Teams Up With Sony for The Witcher 4 Marketing Campaign",
+            "authority": "specialist_media"
+          }
+        ],
+        "source_count": 2,
+        "notified": false,
+        "created_at": "2026-11-25T04:30:10+00:00",
+        "updated_at": "2026-11-25T04:30:10+00:00"
+      },
+      {
+        "id": 173,
+        "fingerprint": "e67abec93d5e7d964e",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "iPhone 18e 設計將改採 iPad Pro 風格相機",
+        "summary_zh": "傳聞 iPhone 18e 將重設計後置相機模組，整合閃光燈與麥克風。",
+        "raw_title": "iPhone 18e to Get Redesigned, iPad Pro-Style Camera",
+        "impact_level": 0,
+        "credibility_pct": 60,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "基於Engadget引述CAD文件，未證實為官方計畫",
+        "source_count": 2,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T21:25:39+08:00",
+        "updated_at": "2026-11-24T21:25:39+08:00",
+        "evidence_tags": [
+          "🔁 雙來源交叉印證",
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "MacRumors",
+            "url": "https://www.macrumors.com/2026/11/24/iphone-18e-to-get-redesigned-ipad-pro-style-camera/",
+            "title": "iPhone 18e to Get Redesigned, iPad Pro-Style Camera",
+            "authority": "insider_media"
+          },
+          {
+            "name": "9to5Mac",
+            "url": "https://9to5mac.com/2026/11/24/cad-images-suggest-iphone-18e-will-have-an-odd-new-camera-design/",
+            "title": "CAD images suggest iPhone 18e will have an odd new camera design",
+            "authority": "insider_media"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "fingerprint": "d85656cf99ef164866",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "黃仁勳被曝與內部員工有婚外情",
+        "summary_zh": "Nvidia執行長黃仁勳被傳與內部員工有婚外情，公司已召開董事會調查。",
+        "raw_title": "Nvidia CEO Jensen Huang is back. What happens next?",
+        "impact_level": 0,
+        "credibility_pct": 60,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "傳聞涉內部關係，細節模糊且未證實",
+        "source_count": 2,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T11:11:30+08:00",
+        "updated_at": "2026-11-24T11:11:30+08:00",
+        "evidence_tags": [
+          "🔁 雙來源交叉印證",
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+            "title": "Nvidia CEO Jensen Huang is back. What happens next?",
+            "authority": "tier1"
+          },
+          {
+            "name": "Hacker News Frontpage",
+            "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+            "title": "Nvidia Reinstates Jensen Huang as CEO",
+            "authority": "community_signal"
+          }
+        ]
+      },
+      {
+        "id": 226,
+        "fingerprint": "87b121ed0390263f86",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "內部模型推理進展引發安全警示",
+        "summary_zh": "內部員工警告未公開模型推理能力突飛猛進，恐公開不安全。",
+        "raw_title": "Sources: Anthropic and OpenAI employees warn that internal, unreleased models have achieved rapid advances in reasoning, making them unsafe to release publicly (Madison Mills/Axios)",
+        "impact_level": 0,
+        "credibility_pct": 56,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "員工內部警示模型進展過快致安全風險",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T21:29:11+08:00",
+        "updated_at": "2026-11-24T21:29:11+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "TechMeme",
+            "url": "https://www.techmeme.com/261124/p11#a261124p11",
+            "title": "Sources: Anthropic and OpenAI employees warn that internal, unreleased models have achieved rapid advances in reasoning, making them unsafe to release publicly (Madison Mills/Axios)",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 221,
+        "fingerprint": "292ec74c223868f535",
+        "kind": "rumor",
+        "domain": "科學・能源",
+        "title_zh": "Anthropic數學家稱用Claude破解黎曼猜想",
+        "summary_zh": "Anthropic數學家Levent Alpöge稱與Claude合作找到黎曼猜想證據，並延後公佈至IPO後。",
+        "raw_title": "A profile of Levent Alpöge, the Anthropic mathematician who found a Riemann hypothesis proof with Claude and held off releasing it until after Anthropic's IPO (Wall Street Journal)",
+        "impact_level": 0,
+        "credibility_pct": 56,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "基於內部消息，未公開驗證",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T21:29:00+08:00",
+        "updated_at": "2026-11-24T21:29:00+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "TechMeme",
+            "url": "https://www.techmeme.com/261124/p16#a261124p16",
+            "title": "A profile of Levent Alpöge, the Anthropic mathematician who found a Riemann hypothesis proof with Claude and held off releasing it until after Anthropic's IPO (Wall Street Journal)",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 156,
+        "fingerprint": "b9563d3d80b4335cf1",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "黃仁勳返 Nvidia 被指中華民國雙面評價",
+        "summary_zh": "北京或歡迎黃仁勳回任，但分析認為可能強化中國自主晶片推進。",
+        "raw_title": "For China, Jensen Huang’s Return to Nvidia Is a Mixed Blessing",
+        "impact_level": 0,
+        "credibility_pct": 56,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "黃仁勳返任未官宣，屬傳聞性評價",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T21:25:05+08:00",
+        "updated_at": "2026-11-24T21:25:05+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "NYT World",
+            "url": "https://www.nytimes.com/2026/11/24/world/asia/jensen-huang-nvidia-china.html",
+            "title": "For China, Jensen Huang’s Return to Nvidia Is a Mixed Blessing",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 143,
+        "fingerprint": "bd1fbcce4ed252680a",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "諾華CEO質疑AI五年內無法治癌",
+        "summary_zh": "諾華執行長質疑AI無法在五年內治癒癌症，指科技界工程思維忽略人類生物複雜性。",
+        "raw_title": "Novartis CEO and Anthropic board member Vas Narasimhan doubts AI will cure cancer in 5-10 years, arguing tech's \"engineering mindset\" overlooks human biology (Financial Times)",
+        "impact_level": 0,
+        "credibility_pct": 56,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "執行長個人觀點，非官方宣佈",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T15:36:25+08:00",
+        "updated_at": "2026-11-24T15:36:25+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "TechMeme",
+            "url": "https://www.techmeme.com/261124/p3#a261124p3",
+            "title": "Novartis CEO and Anthropic board member Vas Narasimhan doubts AI will cure cancer in 5-10 years, arguing tech's \"engineering mindset\" overlooks human biology (Financial Times)",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 142,
+        "fingerprint": "4df437cdb5d67f140f",
+        "kind": "rumor",
+        "domain": "半導體・晶片",
+        "title_zh": "Arm CEO 延長任期至2033 論壇傳將接任Nvidia",
+        "summary_zh": "Arm 董事長 Rene Haas 合約延至2033年，期間傳出將由 Nvidia 預備接任。",
+        "raw_title": "Rene Haas to remain CEO of chipmaker Arm through 2033 amid Nvidia top job chatter",
+        "impact_level": 0,
+        "credibility_pct": 56,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "延任確認，但Nvidia接任屬傳聞未證實",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T15:36:23+08:00",
+        "updated_at": "2026-11-24T15:36:23+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "CNBC Markets & World",
+            "url": "https://www.cnbc.com/2026/11/24/rene-haas-to-remain-ceo-of-chipmaker-arm-through-2033-amid-nvidia-top-job-chatter.html",
+            "title": "Rene Haas to remain CEO of chipmaker Arm through 2033 amid Nvidia top job chatter",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 99,
+        "fingerprint": "20b3bf772ab334fcc2",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "Google產品經理多年優化巴勒斯坦地區地圖遭撤回",
+        "summary_zh": "有來源稱Google產品經理長期優化西岸地圖，後因以色列壓力刪除關鍵內容。",
+        "raw_title": "Sources: a Google product manager spent years updating Maps to better serve Palestinians in the West Bank, but Google retracted key parts after Israeli pressure (Wired)",
+        "impact_level": 0,
+        "credibility_pct": 56,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "來自內部來源，提及產品經理長期投入但內容被撤回",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T12:06:10+08:00",
+        "updated_at": "2026-11-24T12:06:10+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "TechMeme",
+            "url": "https://www.techmeme.com/261123/p53#a261123p53",
+            "title": "Sources: a Google product manager spent years updating Maps to better serve Palestinians in the West Bank, but Google retracted key parts after Israeli pressure (Wired)",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 93,
+        "fingerprint": "7bbabae707a24203ee",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "Kagi 推出郵件服務試用版",
+        "summary_zh": "Kagi 推出無監控、無廣告的郵件服務試用版。",
+        "raw_title": "Google alternative Kagi launches an email service",
+        "impact_level": 0,
+        "credibility_pct": 56,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "未官宣，僅為試用版推出",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T12:06:02+08:00",
+        "updated_at": "2026-11-24T12:06:02+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/tech/1041000/kagi-mail-email-google-gmail-alternative",
+            "title": "Google alternative Kagi launches an email service",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 45,
+        "fingerprint": "23a6ea56e2499e7255",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "馬斯克太空船租出算力助對手",
+        "summary_zh": "馬斯克旗下太空艙將運算資源租給Anthropic等對手，影響自身AI發展。",
+        "raw_title": "Elon Musk Faces an A.I. Dilemma at SpaceX",
+        "impact_level": 0,
+        "credibility_pct": 56,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "租賃算力致內部AI資源受壓",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T11:39:49+08:00",
+        "updated_at": "2026-11-24T11:39:49+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "NYT Technology",
+            "url": "https://www.nytimes.com/2026/11/23/business/elon-musk-ai-anthropic-google.html",
+            "title": "Elon Musk Faces an A.I. Dilemma at SpaceX",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "fingerprint": "8d2f6f710620654d5f",
+        "kind": "rumor",
+        "domain": "半導體・晶片",
+        "title_zh": "iPhone 18 生產延遲至 2027 年年初",
+        "summary_zh": "爆料稱 iPhone 18 與 18e 未進入量產，生產時間推遲至 2027 年。",
+        "raw_title": "iPhone 18 Production Delay Leaves Apple Little Time Before Launch",
+        "impact_level": 0,
+        "credibility_pct": 48,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "reasoning_zh": "來自匿名爆料，未經官方證實",
+        "sources": [
+          {
+            "name": "MacRumors",
+            "url": "https://www.macrumors.com/2026/11/27/iphone-18-production-delay/",
+            "title": "iPhone 18 Production Delay Leaves Apple Little Time Before Launch",
+            "authority": "insider_media"
+          }
+        ],
+        "source_count": 1,
+        "notified": false,
+        "created_at": "2026-11-28T01:41:03+00:00",
+        "updated_at": "2026-11-28T01:41:03+00:00"
+      },
+      {
+        "fingerprint": "0169c9a7577a34a3ed",
+        "kind": "rumor",
+        "domain": "Apple・供應鏈",
+        "title_zh": "32州支持Epic對Apple違規訴訟",
+        "summary_zh": "Epic獲32州及開發者支持，反對Apple違規行為，但尚未進入司法裁決階段。",
+        "raw_title": "Major developers, legal experts, and 32 states back Epic in Apple’s SCOTUS appeal",
+        "impact_level": 0,
+        "credibility_pct": 48,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "reasoning_zh": "多州與專家支持，但屬訴訟前風聲，未達正式宣佈",
+        "sources": [
+          {
+            "name": "9to5Mac",
+            "url": "https://9to5mac.com/2026/11/25/major-developers-legal-experts-and-32-states-back-epic-in-apples-scotus-appeal/",
+            "title": "Major developers, legal experts, and 32 states back Epic in Apple’s SCOTUS appeal",
+            "authority": "insider_media"
+          }
+        ],
+        "source_count": 1,
+        "notified": false,
+        "created_at": "2026-11-25T23:27:41+00:00",
+        "updated_at": "2026-11-25T23:27:41+00:00"
+      },
+      {
+        "id": 324,
+        "fingerprint": "40d707101138a134b4",
+        "kind": "rumor",
+        "domain": "半導體・晶片",
+        "title_zh": "中國公司籌得5000萬人民幣開發EUV光源",
+        "summary_zh": "中國深圳EuvLight科技公司獲約5000萬人民幣預A輪融資，專注開發極紫外光光源。",
+        "raw_title": "Chinese Firm With First Domestic EUV Light Source Prototype Raises 50 Million Yuan In Funding & Says It Relies On Cheaper EUV Mirrors And Wider Tin Nozzles",
+        "impact_level": 0,
+        "credibility_pct": 48,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "僅有本地媒體報導，無官方證實",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-25T10:00:01+08:00",
+        "updated_at": "2026-11-25T10:00:01+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "Wccftech",
+            "url": "https://wccftech.com/chinese-firm-with-first-domestic-euv-light-source-prototype-raises-50-million-yuan-in-funding-says-it-relies-on-cheaper-euv-mirrors-and-wider-tin-nozzles/",
+            "title": "Chinese Firm With First Domestic EUV Light Source Prototype Raises 50 Million Yuan In Funding & Says It Relies On Cheaper EUV Mirrors And Wider Tin Nozzles",
+            "authority": "leak_aggregator"
+          }
+        ]
+      },
+      {
+        "id": 291,
+        "fingerprint": "b059025352a8d6ea98",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "Google批Apple iOS瀏覽器實質無選擇",
+        "summary_zh": "Google支持Mozilla控訴Apple在歐洲限制非WebKit瀏覽器引擎。",
+        "raw_title": "Google Says Apple's iOS Browser Rules Offer 'Choice on Paper, Not in Practice'",
+        "impact_level": 0,
+        "credibility_pct": 48,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "Google指Apple規則紙面有選項實則無",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-25T09:45:04+08:00",
+        "updated_at": "2026-11-25T09:45:04+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "MacRumors",
+            "url": "https://www.macrumors.com/2026/11/24/google-ios-eu-browser-rules/",
+            "title": "Google Says Apple's iOS Browser Rules Offer 'Choice on Paper, Not in Practice'",
+            "authority": "insider_media"
+          }
+        ]
+      },
+      {
+        "id": 265,
+        "fingerprint": "d38c9f9a5328aaafea",
+        "kind": "rumor",
+        "domain": "半導體・晶片",
+        "title_zh": "黃仁勳回任引發GPU銷售管制傳聞",
+        "summary_zh": "分析師李明哲稱黃仁勳回任後出現更嚴格的GPU銷售與租賃限制。",
+        "raw_title": "NVIDIA Under Returning CEO Jensen Huang Faces Tighter GPU Sales Restrictions, Curtailed Leasing, Shipment Investigations And Lawsuits, Says Analyst Ming-Chi Kuo",
+        "impact_level": 0,
+        "credibility_pct": 48,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "黃仁勳回任引發GPU政策調整傳聞",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T22:12:54+08:00",
+        "updated_at": "2026-11-24T22:12:54+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "Wccftech",
+            "url": "https://wccftech.com/nvidia-under-returning-ceo-jensen-huang-faces-tighter-gpu-sales-restrictions-curtailed-leasing-shipment-investigations-and-lawsuits-says-analyst-ming-chi-kuo/",
+            "title": "NVIDIA Under Returning CEO Jensen Huang Faces Tighter GPU Sales Restrictions, Curtailed Leasing, Shipment Investigations And Lawsuits, Says Analyst Ming-Chi Kuo",
+            "authority": "leak_aggregator"
+          }
+        ]
+      },
+      {
+        "id": 189,
+        "fingerprint": "54a327328a550e15d6",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "Nothing傳2027將推進攻性智慧手機計畫",
+        "summary_zh": "Nothing CEO Carl Pei表示2027年將有大量智慧手機推出，並聚焦美國市場。",
+        "raw_title": "Nothing confirms ‘aggressive’ smartphone release schedule for 2027 with US focus",
+        "impact_level": 0,
+        "credibility_pct": 48,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "CEO提及2027大規模釋出計畫，但無具體型號或時間",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T21:26:12+08:00",
+        "updated_at": "2026-11-24T21:26:12+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "9to5Google",
+            "url": "https://9to5google.com/2026/11/24/nothing-smartphones-focus-2027/",
+            "title": "Nothing confirms ‘aggressive’ smartphone release schedule for 2027 with US focus",
+            "authority": "insider_media"
+          }
+        ]
+      },
+      {
+        "id": 181,
+        "fingerprint": "1bd37c4fecb6e4804c",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "特斯拉內部運行10億參數AI模型實測",
+        "summary_zh": "特斯拉據稱在車內運行約10億參數擴散模型，實時生成周遭環境視覺。",
+        "raw_title": "Tesla Is Running A 1-Billion-Parameter AI Model Inside Its Cars To Generate Real-Time Visuals At 36 FPS",
+        "impact_level": 0,
+        "credibility_pct": 48,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "基於CEO言論，未證實為官方發布",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T21:25:56+08:00",
+        "updated_at": "2026-11-24T21:25:56+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "Wccftech",
+            "url": "https://wccftech.com/tesla-is-running-a-1-billion-parameter-ai-model-inside-its-cars-to-generate-real-time-visuals-at-36-fps/",
+            "title": "Tesla Is Running A 1-Billion-Parameter AI Model Inside Its Cars To Generate Real-Time Visuals At 36 FPS",
+            "authority": "leak_aggregator"
+          }
+        ]
+      },
+      {
+        "id": 127,
+        "fingerprint": "01f9a263e21b28cf67",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "Penguin展示光子記憶體裝置預計2027年推出",
+        "summary_zh": "Penguin Solutions展出光子記憶體裝置，支援最高576GB HBM3E與7.2TB/s帶寬，透過光纖連結。",
+        "raw_title": "Penguin shows off photonic memory box at SC26 that can expand AI accelerator capacity over optical links",
+        "impact_level": 0,
+        "credibility_pct": 48,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "reasoning_zh": "未官宣產品，僅為展會展示計畫",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T12:20:58+08:00",
+        "updated_at": "2026-11-24T12:20:58+08:00",
+        "evidence_tags": [
+          "👤 具紀錄爆料客/供應鏈風聲"
+        ],
+        "sources": [
+          {
+            "name": "Tom's Hardware",
+            "url": "https://www.tomshardware.com/pc-components/dram/penguin-shows-off-photonic-memory-box-at-sc26-that-can-expand-ai-accelerator-capacity-over-optical-links-device-sports-up-to-576gb-of-hbm3e-customer-samples-expected-in-2027",
+            "title": "Penguin shows off photonic memory box at SC26 that can expand AI accelerator capacity over optical links",
+            "authority": "specialist_media"
+          }
+        ]
+      },
+      {
+        "fingerprint": "8d30b37b5603cf5383",
+        "kind": "rumor",
+        "domain": "Apple・供應鏈",
+        "title_zh": "HomePod Mini 2 紅色版疑似提前亮相",
+        "summary_zh": "有照片顯示紅色版HomePod Mini 2在商店展出，預計12月1日發佈。",
+        "raw_title": "HomePod Mini 2 in (RED) Seemingly Spotted Ahead of Announcement",
+        "impact_level": 0,
+        "credibility_pct": 34,
+        "rumor_tier": "watch",
+        "upgraded": false,
+        "evidence_tags": [
+          "🔁 雙來源交叉印證",
+          "❓ 單一未證實/匿名來源"
+        ],
+        "reasoning_zh": "僅依網友分享與Bloomberg轉載，無官方證據或正式公告",
+        "sources": [
+          {
+            "name": "MacRumors",
+            "url": "https://www.macrumors.com/2026/11/27/red-homepod-mini-2-seemingly-spotted/",
+            "title": "HomePod Mini 2 in (RED) Seemingly Spotted Ahead of Announcement",
+            "authority": "insider_media"
+          },
+          {
+            "name": "9to5Mac",
+            "url": "https://9to5mac.com/2026/11/27/productred-homepod-mini-2-seemingly-surfaces-ahead-of-rumored-announcement/",
+            "title": "Product(RED) HomePod mini 2 seemingly surfaces ahead of rumored announcement [U]",
+            "authority": "insider_media"
+          }
+        ],
+        "source_count": 2,
+        "notified": false,
+        "created_at": "2026-11-28T09:43:30+00:00",
+        "updated_at": "2026-11-28T09:43:30+00:00"
+      }
+    ],
+    "unlikely": [
+      {
+        "id": 316,
+        "fingerprint": "12cc13f1c6ab9920d2",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "沙烏地國民遭控在OpenAI植入錄音裝置",
+        "summary_zh": "沙烏地男子被指在OpenAI總部會議室藏置錄音裝置。",
+        "raw_title": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
+        "impact_level": 0,
+        "credibility_pct": 30,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "reasoning_zh": "未證實且來源為單一匿名指控",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-25T09:59:45+08:00",
+        "updated_at": "2026-11-25T09:59:45+08:00",
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源"
+        ],
+        "sources": [
+          {
+            "name": "CNBC Markets & World",
+            "url": "https://www.cnbc.com/2026/11/24/openai-bugging-aflozan-release-saudi.html",
+            "title": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 102,
+        "fingerprint": "09a5551b04ce46715a",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "前OpenAI工程師錄影會晤外國政府並拍攝機密條款",
+        "summary_zh": "前OpenAI工程師被指錄影會晤外國代表並拍攝機密條款。",
+        "raw_title": "Filing: ex-OpenAI engineer Abdulrahman Alfozan recorded a meeting with foreign government reps and photographed a confidential term sheet with another company (Emmy Martin/New York Times)",
+        "impact_level": 0,
+        "credibility_pct": 30,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "reasoning_zh": "僅為匿名爆料，無官方證實",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T12:06:17+08:00",
+        "updated_at": "2026-11-24T12:06:17+08:00",
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源"
+        ],
+        "sources": [
+          {
+            "name": "TechMeme",
+            "url": "https://www.techmeme.com/261123/p50#a261123p50",
+            "title": "Filing: ex-OpenAI engineer Abdulrahman Alfozan recorded a meeting with foreign government reps and photographed a confidential term sheet with another company (Emmy Martin/New York Times)",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "fingerprint": "afa5815c43892f2ab9",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "黃仁勳辭職傳出涉中國間諜醜聞",
+        "summary_zh": "Nvidia董事會接受黃仁勳辭職，傳聞其與中國間諜有婚外情，特朗普隨後發言表示將恢復其職位。",
+        "raw_title": "Peterson: Here’s what Bessent’s about-face on Jensen Huang reveals about Trump and China",
+        "impact_level": 0,
+        "credibility_pct": 24,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "reasoning_zh": "無官方證據，僅為匿名傳聞與推測",
+        "source_count": 2,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T11:11:28+08:00",
+        "updated_at": "2026-11-24T11:11:28+08:00",
+        "evidence_tags": [
+          "🔁 雙來源交叉印證",
+          "❓ 單一未證實/匿名來源",
+          "🌫️ 描述模糊空泛"
+        ],
+        "sources": [
+          {
+            "name": "CNBC Markets & World",
+            "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
+            "title": "Peterson: Here’s what Bessent’s about-face on Jensen Huang reveals about Trump and China",
+            "authority": "tier1"
+          },
+          {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
+            "title": "Trump engineered a risky comeback for Jensen Huang",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "fingerprint": "a962a768dca13bd77b",
+        "kind": "rumor",
+        "domain": "遊戲・娛樂爆料",
+        "title_zh": "GTA VI 泄露者釋出 Xbox 版執行檔",
+        "summary_zh": "匿名黑客CYBERLEEK洩露GTA VI Xbox版執行檔，稱反對遊戲產業訂閱制與20美元最終版。",
+        "raw_title": "Grand Theft Auto VI Leaker CYBERLEEK Posts the Xbox Build’s Executable, Calling It a Fight Against Subscriptions and $20 “Ultimate Editions”",
+        "impact_level": 0,
+        "credibility_pct": 22,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "reasoning_zh": "匿名洩露執行檔，無官方證實",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T11:12:13+08:00",
+        "updated_at": "2026-11-24T11:12:13+08:00",
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源"
+        ],
+        "sources": [
+          {
+            "name": "Wccftech",
+            "url": "https://wccftech.com/grand-theft-auto-vi-leaker-cyberleek-xbox-build-executable/",
+            "title": "Grand Theft Auto VI Leaker CYBERLEEK Posts the Xbox Build’s Executable, Calling It a Fight Against Subscriptions and $20 “Ultimate Editions”",
+            "authority": "leak_aggregator"
+          }
+        ]
+      },
+      {
+        "fingerprint": "81b9bdbe6092351e84",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "Dario 警告開源模型違法 以維護控制權",
+        "summary_zh": "Hacker News 高熱討論，指稱 Dario 主張開源模型違法，意在維護自身控制權。",
+        "raw_title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+        "impact_level": 0,
+        "credibility_pct": 20,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源",
+          "🌫️ 描述模糊空泛"
+        ],
+        "reasoning_zh": "無官方證據，僅為 HN 討論中匿名言論，內容模糊且未證實",
+        "sources": [
+          {
+            "name": "Hacker News 核彈高分榜 (>800pts)",
+            "url": "https://twitter.com/ylecun/status/2124550037912920090",
+            "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+            "authority": "tier1"
+          }
+        ],
+        "source_count": 1,
+        "notified": false,
+        "created_at": "2026-11-26T05:25:48+00:00",
+        "updated_at": "2026-11-26T05:25:48+00:00"
+      },
+      {
+        "id": 315,
+        "fingerprint": "0351818b6d6b30682f",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "特朗普欲請回黃仁勳 被指涉中國間諜案",
+        "summary_zh": "共和黨憂心台積電執行長黃仁勳與疑似中國間諜關係危及國安。",
+        "raw_title": "Trump wanted Jensen Huang back. Now, the president is all alone in Washington",
+        "impact_level": 0,
+        "credibility_pct": 20,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "reasoning_zh": "無官方證據，僅屬黨內擔憂傳聞",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-25T09:59:43+08:00",
+        "updated_at": "2026-11-25T09:59:43+08:00",
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源",
+          "🌫️ 描述模糊空泛"
+        ],
+        "sources": [
+          {
+            "name": "CNBC Markets & World",
+            "url": "https://www.cnbc.com/2026/11/24/trump-jensen-huang-nvidia.html",
+            "title": "Trump wanted Jensen Huang back. Now, the president is all alone in Washington",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 309,
+        "fingerprint": "2f2a6f4e9d1b733ab3",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "川普干預台積電董事長復職連結AI熱潮",
+        "summary_zh": "報導指川普介入恢復黃仁勳職務，連結其政治與AI發展。",
+        "raw_title": "Trump's Nvidia intervention ties his political fortunes to the AI boom",
+        "impact_level": 0,
+        "credibility_pct": 20,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "reasoning_zh": "無具體證據，僅傳聞連結政治與AI",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-25T09:59:31+08:00",
+        "updated_at": "2026-11-25T09:59:31+08:00",
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源",
+          "🌫️ 描述模糊空泛"
+        ],
+        "sources": [
+          {
+            "name": "BBC Business",
+            "url": "https://www.bbc.co.uk/news/articles/ckj05m2zdyryo?at_medium=RSS&at_campaign=rss",
+            "title": "Trump's Nvidia intervention ties his political fortunes to the AI boom",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 282,
+        "fingerprint": "23d8e82a4fb0885b33",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "Alice Huang 被指涉 Nvidia 監控醜聞",
+        "summary_zh": "一名中國籍女性被傳與Nvidia監控醜聞有關，成長於武器廠鎮。",
+        "raw_title": "From Chinese Factory Town to the Nvidia Scandal: The Rise of Alice Huang",
+        "impact_level": 0,
+        "credibility_pct": 20,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "reasoning_zh": "無官方證實，僅媒體傳聞提及",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-25T09:44:48+08:00",
+        "updated_at": "2026-11-25T09:44:48+08:00",
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源",
+          "🌫️ 描述模糊空泛"
+        ],
+        "sources": [
+          {
+            "name": "NYT Technology",
+            "url": "https://www.nytimes.com/2026/11/24/business/nvidia-alice-huang-china.html",
+            "title": "From Chinese Factory Town to the Nvidia Scandal: The Rise of Alice Huang",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "fingerprint": "1d19329d23f51b1e39",
+        "kind": "rumor",
+        "domain": "科學・能源",
+        "title_zh": "Levent Alpöge聲稱證明廣義黎曼猜想",
+        "summary_zh": "Hacker News高熱度討論中，提出廣義黎曼猜想證明。",
+        "raw_title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+        "impact_level": 0,
+        "credibility_pct": 20,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源",
+          "🌫️ 描述模糊空泛"
+        ],
+        "reasoning_zh": "無期刊驗證，屬匿名數學論證，未經學界認可",
+        "sources": [
+          {
+            "name": "Hacker News 核彈高分榜 (>800pts)",
+            "url": "https://alpo.ge/remark.pdf",
+            "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+            "authority": "tier1"
+          }
+        ],
+        "source_count": 1,
+        "notified": false,
+        "created_at": "2026-11-25T05:05:15+00:00",
+        "updated_at": "2026-11-25T05:05:15+00:00"
+      },
+      {
+        "fingerprint": "2111c691fae5db1d3d",
+        "kind": "rumor",
+        "domain": "科學・能源",
+        "title_zh": "Alessandro Masullo宣布證明廣義黎曼猜想",
+        "summary_zh": "Hacker News高熱度討論中，聲稱完成廣義黎曼猜想證明。",
+        "raw_title": "Hurried Announcement: Alessandro Masullo GRH",
+        "impact_level": 0,
+        "credibility_pct": 20,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源",
+          "🌫️ 描述模糊空泛"
+        ],
+        "reasoning_zh": "無學術驗證，屬數學界未確認的匿名聲稱",
+        "sources": [
+          {
+            "name": "Hacker News 核彈高分榜 (>800pts)",
+            "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+            "title": "Hurried Announcement: Alessandro Masullo GRH",
+            "authority": "tier1"
+          }
+        ],
+        "source_count": 1,
+        "notified": false,
+        "created_at": "2026-11-25T05:05:15+00:00",
+        "updated_at": "2026-11-25T05:05:15+00:00"
+      },
+      {
+        "id": 91,
+        "fingerprint": "7dfcbaea7b4885fb0a",
+        "kind": "rumor",
+        "domain": "國際政經",
+        "title_zh": "傳俄可能下一月將核彈送入軌道",
+        "summary_zh": "傳聞稱俄羅斯或將核彈送入太空，可能導致數千衛星損毀。",
+        "raw_title": "Reports: Russia may launch nuclear weapon into orbit as soon as next month",
+        "impact_level": 0,
+        "credibility_pct": 20,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "reasoning_zh": "未證實且僅為傳聞，無具體證據",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T12:05:58+08:00",
+        "updated_at": "2026-11-24T12:05:58+08:00",
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源",
+          "🌫️ 描述模糊空泛"
+        ],
+        "sources": [
+          {
+            "name": "Ars Technica",
+            "url": "https://arstechnica.com/space/2026/11/russia-may-launch-a-nuclear-armed-satellite-far-sooner-than-we-thought/",
+            "title": "Reports: Russia may launch nuclear weapon into orbit as soon as next month",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 84,
+        "fingerprint": "0bce172554b6cc9221",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "州政府控訴SpaceX Grok生成兒童性交易內容",
+        "summary_zh": "X稱所有Grok輸出皆經篩檢，但多州檢察官指其仍生成兒童性交易內容。",
+        "raw_title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+        "impact_level": 0,
+        "credibility_pct": 20,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "reasoning_zh": "未證實內容，僅州政府指控",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T12:05:49+08:00",
+        "updated_at": "2026-11-24T12:05:49+08:00",
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源",
+          "🌫️ 描述模糊空泛"
+        ],
+        "sources": [
+          {
+            "name": "Ars Technica",
+            "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+            "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 69,
+        "fingerprint": "07a9183c9756aae32e",
+        "kind": "rumor",
+        "domain": "國際政經",
+        "title_zh": "俄方擬發射含核彈衛星引Nato強調太空防衛",
+        "summary_zh": "德媒報導俄方計劃來週發射載有核彈頭的衛星，Nato總幹事表態將加強太空防禦。",
+        "raw_title": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
+        "impact_level": 0,
+        "credibility_pct": 20,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "reasoning_zh": "德媒報導未證實，屬匿名來源傳聞",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T12:05:19+08:00",
+        "updated_at": "2026-11-24T12:05:19+08:00",
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源",
+          "🌫️ 描述模糊空泛"
+        ],
+        "sources": [
+          {
+            "name": "BBC World",
+            "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss",
+            "title": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 47,
+        "fingerprint": "31a447122827f36869",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "川普介入NVIDIA人事調整忽略國安警告",
+        "summary_zh": "川普指派黃仁勳回任NVIDIA執行長，被指忽視內部國安警示。",
+        "raw_title": "Trump’s Extraordinary Nvidia Intervention Sidelines National Security Concerns",
+        "impact_level": 0,
+        "credibility_pct": 20,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "reasoning_zh": "無官方證據，僅媒體推測人事調整",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T11:39:53+08:00",
+        "updated_at": "2026-11-24T11:39:53+08:00",
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源",
+          "🌫️ 描述模糊空泛"
+        ],
+        "sources": [
+          {
+            "name": "NYT Technology",
+            "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-national-security.html",
+            "title": "Trump’s Extraordinary Nvidia Intervention Sidelines National Security Concerns",
+            "authority": "tier1"
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "fingerprint": "cc8e03ac8e8f3f96ae",
+        "kind": "rumor",
+        "domain": "AI・科技巨頭",
+        "title_zh": "川普傳推動恢復黃仁勳台積電執行長職",
+        "summary_zh": "川普透過副總統推動讓黃仁勳重返職務，尚未官宣。",
+        "raw_title": "Trump Is Said to Have Pushed to Reinstate Nvidia CEO Jensen Huang",
+        "impact_level": 0,
+        "credibility_pct": 20,
+        "rumor_tier": "unlikely",
+        "upgraded": false,
+        "reasoning_zh": "未證實官方行動，僅為傳聞描述",
+        "source_count": 1,
+        "notified": false,
+        "is_sandbox": false,
+        "created_at": "2026-11-24T11:28:05+08:00",
+        "updated_at": "2026-11-24T11:28:05+08:00",
+        "evidence_tags": [
+          "❓ 單一未證實/匿名來源",
+          "🌫️ 描述模糊空泛"
+        ],
+        "sources": [
+          {
+            "name": "NYT Technology",
+            "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang.html",
+            "title": "Trump Is Said to Have Pushed to Reinstate Nvidia CEO Jensen Huang",
+            "authority": "tier1"
+          }
+        ]
+      }
+    ]
+  },
+  "auto_history": [
+    {
+      "id": "19762616c89c046985",
+      "date": "2026-11",
+      "year": 2026,
+      "funnel_tier": 10,
+      "level_label": "Lv.10",
+      "domain": "國際政經",
+      "title_zh": "伊朗無人機襲擊科威特致兩名義大利人喪生",
+      "summary_zh": "伊朗對科威特的無人機襲擊造成兩名義大利人死亡，反映地區軍事緊張。",
+      "impact_zh": "官方確認襲擊致死，屬國際衝突直接傷亡",
+      "url": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html",
+      "auto_captured": true
+    }
+  ],
+  "stats": {
+    "total_seen_urls": 345,
+    "total_evaluated": 524,
+    "noise_filtered": 377,
+    "noise_ratio_pct": 72,
+    "major_alert_count": 1,
+    "major_archive_count": 92,
+    "rumor_count": 54
+  },
+  "last_scan": {
+    "finished_at": "2026-11-28T09:43:30+00:00",
+    "status": "ok",
+    "message": "雲端巡檢完成（新增核彈 0、收錄 2、傳言 1、攔截雜訊 10）"
+  },
+  "settings": {
+    "major_notify_min": "9",
+    "rumor_low_max": "33",
+    "rumor_watch_max": "67"
+  },
+  "heartbeat": {
+    "updated_at": "2026-11-28T09:43:30+00:00",
+    "node_name": "GitHub-Cloud",
+    "model_id": "qwen3:4b-instruct"
+  },
+  "static_mode": true
+}
